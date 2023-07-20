@@ -1,0 +1,328 @@
+@font-face{
+    font-family:'Roboto';
+    src:url(../Fonts/Roboto-Regular.ttf);
+    src:url(../Fonts/Roboto-Bold.ttf);
+    src:url(../Fonts/Roboto-Medium.ttf);
+    src:url(../Fonts/Roboto-Thin.ttf)
+}
+
+@font-face{
+    font-family:'Poppins';
+    src:url(../Fonts/Poppins-Regular.ttf);
+    src:url(../Fonts/Poppins-Bold.ttf);
+    src:url(../Fonts/Poppins-Light.ttf);
+    src:url(../Fonts/Poppins-Thin.ttf)
+}
+
+
+body{
+    font-family: 'Poppins','Roboto','Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size:16px;
+    font-weight: 500;
+    color: #272727;
+    -webkit-font-smoothing: antialiased;
+}
+
+.section-spacing{
+    margin-top:9em;
+    margin-bottom:9em;
+    display: inline-block;
+    width: 100%;
+}
+
+.section-heading{
+    font-size: 42px;
+    border-bottom:7px solid #747474;
+}
+
+.section-information {
+    font-size: 20px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:rgb(102, 102, 102);
+    font-weight: 100;
+}
+
+.nav-style{
+    flex-direction: row-reverse;
+    padding-right: 3em;
+    font-weight: bold;
+    font-size:20px;
+}
+
+.navbar{
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+}
+
+.hero-rp{
+   overflow: hidden;
+    position:relative;
+/* 
+    background-image: url(/Images/Hero-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; */
+/*     
+    background: rgb(111,123,169);
+    background: linear-gradient(180deg, rgba(111,123,169,1) 0%, rgba(133,194,229,1) 100%);  */
+
+    /* background: rgb(39,54,123);
+    background: linear-gradient(180deg, rgba(39,54,123,1) 0%, rgba(9,9,121,1) 35%, rgba(74,168,220,1) 100%);  */
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color:white;
+    height:70vh;
+}
+
+.hero-greeting{
+    z-index: 100;
+
+}
+
+.hero-rp span{
+    font-size: 34px;
+}
+
+.name-emphasis{
+    font-size:54px !important;
+    font-weight:bold !important;
+    padding-left:15px;
+    margin-top:15px;
+}
+
+.hello-emphasis{
+    font-size: 80px !important;
+    font-weight: bold;
+}
+
+
+.video-hero{
+    position: absolute;
+    top:0;
+    left:0;
+    margin:auto;
+    z-index: -1;
+    filter: blur(20px);
+    -webkit-filter: blur(20px);
+    transform: translate(-50%, -50%), scale(.95);
+}
+
+
+@media(min-aspect-ratio:16/9){
+    .video-hero{
+        width:100%;
+        height:auto;
+    }
+}
+
+
+@media(max-aspect-ratio:16/9){
+    .video-hero{
+        width:auto;
+        height:100%;
+    }
+}
+
+.video-overlay{
+    position:absolute;
+    top:0;
+    left:0;
+    background-image:
+    linear-gradient(180deg, rgba(39,54,123,1) 0%, rgba(74,168,220,1) 100%);
+    width: 80%;
+    height: 400px;
+    background-size: cover;
+    color: white;
+    padding: 20px;
+    width:100%;
+    height:100%;
+    opacity: .80;
+}
+
+
+
+.hero-social-list{
+    justify-content: center;
+    align-items: center;
+}
+
+
+.hero-social-list-item{
+    background-color: transparent;
+    color:white;
+    border: none;
+}
+
+.hero-social-list-item:hover{
+    background-color: rgba(0,0,0,.2);
+}
+
+.home-intro{
+    font-size: 22px;
+    font-weight: bold;
+    color:#5A5A5A;
+}
+
+
+
+.home-image-banner{
+    display:inline-block;
+    width:100%;
+    height:290px;
+    background-image: url("../Images/home-banner-img.png");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* filter: blur(10px);
+    -webkit-filter: blur(10px); */
+    /* background: linear-gradient(180deg, rgba(71,83,128,1) 0%, rgba(74,168,220,1) 100%);  */
+}
+
+.home-image-banner>div{
+    background-image: linear-gradient(180deg, rgba(39,54,123,1) 0%, rgba(74,168,220,1) 100%);
+    height: 100%;
+    width: 100%;
+    opacity: 0.8;
+  
+}
+
+.home-contact{
+    margin-top:9em;
+    height: 680px;
+    width: 100%;
+    color: white;
+    padding: 6em;
+    /* background: rgb(71,83,128);
+    background: linear-gradient(180deg, rgba(71,83,128,1) 0%, rgba(74,168,220,1) 100%);  */
+
+    background: rgb(71,83,128);
+    background: linear-gradient(180deg, rgba(71,83,128,1) 0%, rgba(62,120,190,1) 100%); 
+}
+
+.home-contact-header{
+    font-weight: 600;
+    font-size: 42px;
+    border-color:white;
+    margin-bottom: 1em;
+}
+
+.home-contact-message{
+    font-size:35px;
+    font-weight: 100;
+    color:white;
+}
+
+.home-contact-button{
+    margin-top:3em;
+    text-align: center;
+    font-size:24px;
+    width:390px;
+    height:75px;
+    background-color: #FF7600;
+    color:white;
+    border:none;
+    font-weight: 600;
+    box-shadow:1px 1px 3px rgba(0,0,0,.2);
+    transition:all 20ms ease-in-out;
+}
+
+ .home-contact-button:hover{
+    cursor:pointer;
+    box-shadow: 4px 4px 8px rgba(0,0,0,.5);
+ }
+
+
+
+.home-skill-book{
+    /* background-color:grey; */
+    display:inline-block;
+    width:200px;
+    /* color:white; */
+    padding:.2em 1em;
+    /* font-weight: bold; */
+    color:#919191;
+    font-weight: 100;
+    /* transform:rotateX(45); */
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+
+.project-group-section{
+    display:flex;
+    flex-direction: column;
+    
+}
+
+.project-group{
+    display: flex;
+    gap:3em;    
+}
+
+.project-project-title{
+    font-weight: Bold;
+    font-family: 'Poppins';
+}
+
+.project-group-info{
+    font-weight: 100;
+    font-size: 20px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+.project-project-details-btn{
+    height: 50px;
+    width: 250px;
+    font-size: 24px;
+    font-weight: 100;
+    background-color: #01a2e1;
+    margin-top:3em;
+    text-align: center;
+    color:white;
+    box-shadow:1px 2px 3px rgba(0,0,0,.5);
+    border:none;
+    transition:all 20ms ease-in-out;
+}
+
+.project-project-details-btn:hover{
+    cursor:pointer;
+    box-shadow: 4px 4px 8px rgba(0,0,0,.5);
+}
+
+
+
+
+/* ABOUT ME */
+.profile-pic{
+    width:340px;
+    border-radius: 50%;
+}
+
+ /* OVERRIDES */
+
+.card{
+    border-radius:0;
+    box-shadow:1px 1px 6px rgba(0,0,0,.2);
+    transition: all 20ms ease-in-out;
+}
+
+.card:hover{
+    box-shadow: 3px 3px 10px rgba(0,0,0,.2);
+    cursor:pointer;
+}
+
+.card-title{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 100;
+    font-size:19px;
+    color:rgb(92, 92, 92);
+}
+
+.card-text{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 100;
+}
+
+
