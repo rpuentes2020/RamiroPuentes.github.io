@@ -31,7 +31,7 @@ body{
 }
 
 .section-heading{
-    font-size: 42px;
+    font-size: 2.2rem;
     border-bottom:7px solid #747474;
 }
 
@@ -62,17 +62,6 @@ body{
 .hero-rp{
    overflow: hidden;
     position:relative;
-/* 
-    background-image: url(/Images/Hero-bg.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover; */
-/*     
-    background: rgb(111,123,169);
-    background: linear-gradient(180deg, rgba(111,123,169,1) 0%, rgba(133,194,229,1) 100%);  */
-
-    /* background: rgb(39,54,123);
-    background: linear-gradient(180deg, rgba(39,54,123,1) 0%, rgba(9,9,121,1) 35%, rgba(74,168,220,1) 100%);  */
     display:flex;
     align-items: center;
     justify-content: center;
@@ -83,6 +72,7 @@ body{
 
 .hero-greeting{
     z-index: 100;
+    max-width:100%;
 
 }
 
@@ -309,7 +299,21 @@ body{
 }
 
 
+.user-research-image{
+    max-width:100%;
+    margin:auto;
+    display: block;
+}
 
+.project-details-wrapper{
+    padding:1rem;
+}
+
+.project-details-image{
+    max-width:100%;
+    display: block;
+    margin:auto;
+}
 
 /* ABOUT ME */
 .profile-pic{
@@ -354,3 +358,159 @@ body{
       object-fit: cover;
       min-height: 600px;
   } */
+
+.portfolio-card{
+    margin-bottom: 2rem;
+}
+
+
+  @media (max-width: 576px) { 
+
+    .project-group-info{
+        order:2;
+    }
+
+    .project-group{
+        padding: 1em;
+        margin: 2em auto 9em;
+    }
+
+    .project-project-details-btn{
+        margin-top:1em;
+    }
+
+    .home-contact{
+        padding:1em;
+        height:600px;
+    }
+
+    .home-contact-button{
+        width:75%;
+    }
+
+    .home-contact-header{
+        margin-top:2em;
+    }
+
+    .hello-emphasis{
+        font-size:3rem !important;
+    }
+
+    .name-emphasis{
+        font-size: 2.5rem !important;
+    }
+
+    .home-intro{
+        padding: 1em;
+        font-size: 1.2rem;
+        margin-top: 2rem;
+    }
+
+    .home-image-banner{
+        height:150px;
+    }
+  
+    .home-portfolio{
+        padding:1rem;
+    }
+
+    .home-skills{
+        padding:1rem;
+    }
+
+    .home-recent-achievements{
+        padding:1rem;
+    }
+
+    .home-skill-book{
+        width:auto;
+    }
+
+    .hero-rp{
+        height:50vh;
+    }
+
+    .about-me{
+        padding:1rem;
+    }
+
+    .about-me-philosophy{
+        padding:1rem;
+    }
+
+
+}
+
+  @media (max-width: 926px) { 
+
+    .project-group-info{
+        order:2;
+    }
+
+    .project-group{
+        padding: 1em;
+        margin: 2em auto 9em;
+    }
+
+
+    .project-project-details-btn{
+        margin-top:1em;
+    }
+
+    .home-contact{
+        padding:1em;
+        height:600px;
+    }
+
+    .home-contact-button{
+        width:75%;
+    }
+
+    .home-contact-header{
+        margin-top:2em;
+    }
+
+    .hello-emphasis{
+        font-size:3rem !important;
+    }
+
+    .name-emphasis{
+        font-size: 2.5rem !important;
+    }
+
+    .home-intro{
+        padding: 1em;
+        font-size: 1.2rem;
+    }
+
+    .section-spacing{
+        margin:2rem auto 5rem;
+    }
+
+
+    .home-image-banner{
+        height:150px;
+    }
+    
+    .home-portfolio{
+        padding:1rem;
+    }
+
+    .home-skills{
+        padding:1rem;
+    }
+
+    .home-recent-achievements{
+        padding:1rem;
+    }
+
+    .home-skill-book{
+        width:auto;
+    }
+
+    /* .hero-rp{
+        height:50vh;
+    } */
+
+
+  }
