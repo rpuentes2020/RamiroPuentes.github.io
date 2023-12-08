@@ -1,32 +1,89 @@
 :root{
     --rpBlue:#01a2e1;
     --rpBlueActive:#0593cb;
+    --headlineGray:#5f6368;
+    --GBlack:#202124;
+    --CtaBg:#e86f06;
 }
 
 
 @font-face{
     font-family:'Roboto';
     src:url(../Fonts/Roboto-Regular.ttf);
-    src:url(../Fonts/Roboto-Bold.ttf);
+    font-weight: 700;
+    font-style: normal;
+
+    /* src:url(../Fonts/Roboto-Bold.ttf);
     src:url(../Fonts/Roboto-Medium.ttf);
-    src:url(../Fonts/Roboto-Thin.ttf)
+    src:url(../Fonts/Roboto-Thin.ttf) */
 }
+
+
+@font-face{
+    font-family:'RobotoBold';
+    src:url(../Fonts/Roboto-Bold.ttf);
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face{
+    font-family:'RobotoMedium';
+    src:url(../Fonts/Roboto-Medium.ttf);
+    font-weight:700;
+    font-style: normal;
+}
+
+@font-face{
+    font-family:'RobotoThin';
+    src:url(../Fonts/Roboto-Thin.ttf);
+    font-weight:700;
+    font-style: normal;
+}
+
+
 
 @font-face{
     font-family:'Poppins';
     src:url(../Fonts/Poppins-Regular.ttf);
-    src:url(../Fonts/Poppins-Bold.ttf);
-    src:url(../Fonts/Poppins-Light.ttf);
-    src:url(../Fonts/Poppins-Thin.ttf)
+    font-weight:700;
+    font-style: normal;
 }
+
+
+
+@font-face{
+    font-family:'PoppinsBold';
+    src:url(../Fonts/Poppins-Bold.ttf);
+    font-weight:700;
+    font-style: normal;
+}
+
+
+@font-face{
+    font-family:'PoppinsLight';
+    src:url(../Fonts/Poppins-Light.ttf);
+    font-weight:700;
+    font-style: normal;
+}
+
+
+@font-face{
+    font-family:'PoppinsThin';
+    src:url(../Fonts/Poppins-Thin.ttf);
+    font-weight:700;
+    font-style: normal;
+}
+
+
 
 
 
 body{
     /* font-family: 'Roboto','Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
-    font-size:16px;
+    font-family: 'Roboto','Arial','Helvetica','sans-serif';
+    font-size:16px; 
     /* font-weight: bold; */
-    color: #272727;
+    color: var(--GBlack);
     -webkit-font-smoothing: antialiased;
 }
 
@@ -35,6 +92,97 @@ body{
     margin-bottom:9em;
     display: inline-block;
     width: 100%;
+}
+
+
+.p-headline1{
+    /* font-family: 'Roboto','Arial','Helvetica','sans-serif'; */
+    font-size: 36px;
+    font-weight: 400;
+    letter-spacing: -.5px;
+    line-height: 44px;
+}
+
+.p-headline4{
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: normal;
+    line-height: 32px;
+}
+
+.p-headline5{
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: normal;
+    line-height: 22px;
+}
+
+
+.p-gray{
+    color:var(--headlineGray);
+}
+
+.p-text{
+    font-size: 16px;
+    line-height: 1.75;
+}
+
+
+.cta-bg{
+    background-color:var(--CtaBg);
+    color:white;
+}
+
+.cta-btn-sm{
+    padding:1rem 2rem;
+    font-size: 18px;
+    border:none;
+    border-radius: 2px;
+    transition:all 20ms ease-in-out;
+}
+
+.cta-btn-sm:hover{
+    box-shadow: 0 1px 2px 0 var(--gm-fillbutton-keyshadow-color,rgba(60,64,67,.3)),0 1px 3px 1px var(--gm-fillbutton-ambientshadow-color,rgba(60,64,67,.15))
+}
+
+
+.mc-card{
+    border:1px solid lightgrey;
+    border-radius: 2px;
+    padding:0;
+    box-shadow: 0 1px 2px 0 var(--gm-fillbutton-keyshadow-color,rgba(60,64,67,.3)),0 1px 3px 1px var(--gm-fillbutton-ambientshadow-color,rgba(60,64,67,.15));
+    overflow: hidden;
+    
+}
+
+.mc-card a{
+    text-decoration: none;
+    color: var(--GBlack);
+}
+
+.mc-card-w{
+    padding:10px;
+}
+
+.mc-img{
+    width: 100%;
+    height: 200px;
+    display: inline-block;
+
+}
+
+.mc-img img{
+   height: 100%;
+   width: 100%;
+   object-fit: cover;
+   object-position: center;
+}
+
+.mc-con{
+    height: 100px;
+    padding:20px;
+    text-align: center;
+    
 }
 
 .section-heading{
@@ -263,10 +411,10 @@ body{
 
 .home-contact{
     margin-top:9em;
-    height: 680px;
+    /* height: 680px; */
     width: 100%;
     color: white;
-    padding: 6em;
+    padding: 6em 6em 9em;
     /* background: rgb(71,83,128);
     background: linear-gradient(180deg, rgba(71,83,128,1) 0%, rgba(74,168,220,1) 100%);  */
 
@@ -289,7 +437,7 @@ body{
 }
 
 .home-contact-button{
-    margin-top:3em;
+    margin-top:2em;
     text-align: center;
     font-size:24px;
     width:390px;
@@ -416,7 +564,7 @@ body{
 
 .card:hover{
     box-shadow: 3px 3px 10px rgba(0,0,0,.2);
-   
+    cursor:pointer;
 }
 
 .card-title{
