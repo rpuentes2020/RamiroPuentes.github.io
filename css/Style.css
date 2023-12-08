@@ -96,7 +96,8 @@ body{
 
 
 .p-headline1{
-    /* font-family: 'Roboto','Arial','Helvetica','sans-serif'; */
+  
+    font-family: 'Poppins';
     font-size: 36px;
     font-weight: 400;
     letter-spacing: -.5px;
@@ -150,9 +151,13 @@ body{
     border:1px solid lightgrey;
     border-radius: 2px;
     padding:0;
-    box-shadow: 0 1px 2px 0 var(--gm-fillbutton-keyshadow-color,rgba(60,64,67,.3)),0 1px 3px 1px var(--gm-fillbutton-ambientshadow-color,rgba(60,64,67,.15));
     overflow: hidden;
-    
+    transition:all 20ms ease-in-out;
+    box-shadow: 0 1px 2px 0 var(--gm-fillbutton-keyshadow-color,rgba(60,64,67,.3)),0 1px 3px 1px var(--gm-fillbutton-ambientshadow-color,rgba(60,64,67,.15));
+}
+
+.mc-card:hover{
+    box-shadow: 0 2px 4px 0 var(--gm-fillbutton-keyshadow-color,rgba(60,64,67,.3)),0 1px 4px 2px var(--gm-fillbutton-ambientshadow-color,rgba(60,64,67,.15));
 }
 
 .mc-card a{
