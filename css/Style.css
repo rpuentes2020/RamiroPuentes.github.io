@@ -328,9 +328,12 @@ body{
     margin-top: 20px;
 }
 
+.video-hero{
+    width:100%;
+    height:auto;
+}
 
-
-@media(min-aspect-ratio:16/9){
+/* @media(min-aspect-ratio:16/9){
     .video-hero{
         width:100%;
         height:auto;
@@ -343,7 +346,7 @@ body{
         width:auto;
         height:100%;
     }
-}
+} */
 
 .video-overlay{
     position:absolute;
@@ -662,6 +665,12 @@ body{
 
 }
 
+@media(max-width:690px){
+    .video-hero{
+        display:none;
+    }
+}
+
   @media (max-width: 926px) { 
 
     .project-group-info{
@@ -739,3 +748,16 @@ body{
 
 
   }
+
+
+
+@media (max-width:1300px){
+    .video-hero{
+        width:auto;
+        height:100%;
+       
+    }
+}
+
+
+ 
