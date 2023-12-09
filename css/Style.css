@@ -308,10 +308,13 @@ body{
     padding:1rem 2rem 90px;
 }
 
+.card-item{
+    width:30%;
+}
+
 .card-img-top{
     border-bottom:1px solid lightgrey;
 }
-
 
 .card-body >p{
     font-size:15px;
@@ -602,99 +605,31 @@ body{
 }
 
 
-  @media (max-width: 576px) { 
-
-    .project-group-info{
-        order:2;
-    }
-
-    .project-group{
-        padding: 1em;
-        margin: 2em auto 9em;
-    }
-
-    .project-project-details-btn{
-        margin-top:1em;
-    }
-
-    .home-contact{
-        padding:1em;
-        height:600px;
-    }
-
-    .home-contact-button{
-        width:75%;
-    }
-
-    .home-contact-header{
-        margin-top:2em;
-    }
-
-    .hello-emphasis{
-        font-size:3rem !important;
-    }
-
-    .name-emphasis{
-        font-size: 2.5rem !important;
-    }
-
-    .home-intro{
-        padding: 1em;
-        font-size: 1.2rem;
-        margin-top: 2rem;
-    }
-
-    .home-image-banner{
-        height:150px;
-    }
-  
-    .home-portfolio{
-        padding:1rem;
-    }
-
-    .home-skills{
-        padding:1rem;
-    }
-
-    .home-recent-achievements{
-        padding:1rem;
-    }
-
-    .home-skill-book{
-        width:auto;
-    }
-
-    .hero-rp{
-        height:50vh;
-    }
-
-    .about-me{
-        padding:1rem;
-    }
-
-    .about-me-philosophy{
-        padding:1rem;
-    }
 
 
-}
 
-@media(max-width:690px){
+
+@media (max-width:1300px){
     .video-hero{
-        display:none;
+        width:auto;
+        height:100%;
+       
     }
 }
 
-@media(max-width:768px){
-    .welcome-img{
-        width:50%;
+@media (max-width:1070px){
+    .portfolio-container{
+        max-width:100%;
     }
 
-    .welcome-image-wrapper{
-        text-align: center;
+    .portfolio-card-wrapper{
+        gap:15px;
     }
-    
-}
+
+    .card-item{
+        width:45%;
+    }
+  }
 
   @media (max-width: 926px) { 
 
@@ -771,18 +706,169 @@ body{
         height:50vh;
     } */
 
+    .portfolio-container{
+        max-width:100%;
+    }
+
+    .portfolio-card-wrapper{
+        gap:15px;
+    }
+
+    .card-item{
+        width:48%;
+    }
 
   }
 
+  @media(max-width:768px){
+    .welcome-img{
+        width:50%;
+    }
 
+    .welcome-image-wrapper{
+        text-align: center;
+    }
+    
+}
 
-@media (max-width:1300px){
+@media(max-width:690px){
     .video-hero{
+        display:none;
+    }
+    .portfolio-container{
+        max-width:100%;
+    }
+
+    .portfolio-card-wrapper{
+        gap:15px;
+    }
+
+    .card-item{
+        width:85%;
+    }
+}
+
+@media (max-width: 576px) { 
+
+    .project-group-info{
+        order:2;
+    }
+
+    .project-group{
+        padding: 1em;
+        margin: 2em auto 9em;
+    }
+
+    .project-project-details-btn{
+        margin-top:1em;
+    }
+
+    .home-contact{
+        padding:1em;
+        height:600px;
+    }
+
+    .home-contact-button{
+        width:75%;
+    }
+
+    .home-contact-header{
+        margin-top:2em;
+    }
+
+    .hello-emphasis{
+        font-size:3rem !important;
+    }
+
+    .name-emphasis{
+        font-size: 2.5rem !important;
+    }
+
+    .home-intro{
+        padding: 1em;
+        font-size: 1.2rem;
+        margin-top: 2rem;
+    }
+
+    .home-image-banner{
+        height:150px;
+    }
+  
+    .home-portfolio{
+        padding:1rem;
+    }
+
+    .home-skills{
+        padding:1rem;
+    }
+
+    .home-recent-achievements{
+        padding:1rem;
+    }
+
+    .home-skill-book{
         width:auto;
-        height:100%;
-       
+    }
+
+    .hero-rp{
+        height:50vh;
+    }
+
+    .about-me{
+        padding:1rem;
+    }
+
+    .about-me-philosophy{
+        padding:1rem;
+    }
+
+
+}
+
+
+
+
+
+
+
+/* iPad Portrait */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+    .portfolio-container{
+        max-width:100%;
+    }
+
+    .portfolio-card-wrapper{
+        gap:15px;
+    }
+
+    .card-item{
+        width:48%;
     }
 }
 
 
- 
+/* iPad Landscape */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1190px) 
+  and (orientation: landscape) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+    .portfolio-container{
+        max-width:100%;
+    }
+
+    .portfolio-card-wrapper{
+        gap:15px;
+    }
+
+    .card-item{
+        width:30%;
+    }
+
+}
