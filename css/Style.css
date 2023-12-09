@@ -115,9 +115,16 @@ body{
     font-size: 18px;
     font-weight: 400;
     letter-spacing: normal;
-    line-height: 22px;
+    line-height: 30px;
 }
 
+.welcome-img{
+    width:100%;
+}
+
+.welcome-message{
+    margin-top: 50px;
+}
 
 .p-gray{
     color:var(--headlineGray);
@@ -674,6 +681,17 @@ body{
     .video-hero{
         display:none;
     }
+}
+
+@media(max-width:768px){
+    .welcome-img{
+        width:50%;
+    }
+
+    .welcome-image-wrapper{
+        text-align: center;
+    }
+    
 }
 
   @media (max-width: 926px) { 
