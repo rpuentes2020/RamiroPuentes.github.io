@@ -311,11 +311,7 @@ body{
 .card-img-top{
     border-bottom:1px solid lightgrey;
 }
-.card-item{
-    /* min-width: 300px;
-    max-width: 425px;
-    flex-grow: 2; */
-}
+
 
 .card-body >p{
     font-size:15px;
