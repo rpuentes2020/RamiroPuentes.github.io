@@ -118,6 +118,12 @@ body{
     line-height: 30px;
 }
 
+.p-card-body-subheading{
+    font-size: 14px;
+    font-family: 'Roboto';
+    color: #5b5b5b;
+}
+
 .welcome-img{
     width:100%;
 }
@@ -299,16 +305,16 @@ body{
 .card-body{
     position: relative;
     /* padding-bottom: 150px; */
-    padding:1rem 2rem 150px;
+    padding:1rem 2rem 90px;
 }
 
 .card-img-top{
     border-bottom:1px solid lightgrey;
 }
 .card-item{
-    min-width: 300px;
+    /* min-width: 300px;
     max-width: 425px;
-    flex-grow: 2;
+    flex-grow: 2; */
 }
 
 .card-body >p{
