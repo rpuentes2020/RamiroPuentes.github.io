@@ -245,6 +245,7 @@ body{
     text-align: center;
     color:white;
     height:60vh;
+    min-height: 320px;
 }
 
 .hero-greeting{
@@ -484,8 +485,9 @@ body{
     width:200px;
     /* color:white; */
     padding:.2em 1em;
-    /* font-weight: bold; 
-    color:#4d4d4d;*/
+    /* font-weight: bold; */
+    /* color:#4d4d4d;
+    color:var(--GBlack); */
     font-weight: 100;
     /* transform:rotateX(45); */
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -849,6 +851,18 @@ body{
     .card-item{
         width:48%;
     }
+
+    .hero-rp{
+        height: 40vh;
+    }
+
+    .mc-con{
+        padding:5px;
+    }
+
+    .mc-card-w{
+        width:48%;
+    }
 }
 
 
@@ -871,4 +885,12 @@ body{
         width:30%;
     }
 
+    .video-hero{
+        width:100%;
+        height: auto;
+    }
+
+    .mc-con{
+        padding:5px;
+    }
 }
