@@ -1,896 +1,315 @@
-:root{
-    --rpBlue:#01a2e1;
-    --rpBlueActive:#0593cb;
-    --headlineGray:#5f6368;
-    --GBlack:#202124;
-    --CtaBg:#e86f06;
-}
-
-
-@font-face{
-    font-family:'Roboto';
-    src:url(../Fonts/Roboto-Regular.ttf);
-    font-weight: 700;
-    font-style: normal;
-
-    /* src:url(../Fonts/Roboto-Bold.ttf);
-    src:url(../Fonts/Roboto-Medium.ttf);
-    src:url(../Fonts/Roboto-Thin.ttf) */
-}
-
-
-@font-face{
-    font-family:'RobotoBold';
-    src:url(../Fonts/Roboto-Bold.ttf);
-    font-weight: 700;
-    font-style: normal;
-}
-
-@font-face{
-    font-family:'RobotoMedium';
-    src:url(../Fonts/Roboto-Medium.ttf);
-    font-weight:700;
-    font-style: normal;
-}
-
-@font-face{
-    font-family:'RobotoThin';
-    src:url(../Fonts/Roboto-Thin.ttf);
-    font-weight:700;
-    font-style: normal;
-}
-
-
-
-@font-face{
-    font-family:'Poppins';
-    src:url(../Fonts/Poppins-Regular.ttf);
-    font-weight:700;
-    font-style: normal;
-}
-
-
-
-@font-face{
-    font-family:'PoppinsBold';
-    src:url(../Fonts/Poppins-Bold.ttf);
-    font-weight:700;
-    font-style: normal;
-}
-
-
-@font-face{
-    font-family:'PoppinsLight';
-    src:url(../Fonts/Poppins-Light.ttf);
-    font-weight:700;
-    font-style: normal;
-}
-
-
-@font-face{
-    font-family:'PoppinsThin';
-    src:url(../Fonts/Poppins-Thin.ttf);
-    font-weight:700;
-    font-style: normal;
-}
-
-
-
-
-
-body{
-    /* font-family: 'Roboto','Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
-    font-family: 'Roboto','Arial','Helvetica','sans-serif';
-    font-size:16px; 
-    /* font-weight: bold; */
-    color: var(--GBlack);
-    -webkit-font-smoothing: antialiased;
-}
-
-.section-spacing{
-    margin-top:9em;
-    margin-bottom:9em;
-    display: inline-block;
-    width: 100%;
-}
-
-
-.p-headline1{
-  
-    font-family: 'Poppins';
-    font-size: 36px;
-    font-weight: 400;
-    letter-spacing: -.5px;
-    line-height: 44px;
-}
-
-.p-headline4{
-    font-size: 24px;
-    font-weight: 400;
-    letter-spacing: normal;
-    line-height: 32px;
-}
-
-.p-headline5{
-    font-size: 18px;
-    font-weight: 400;
-    letter-spacing: normal;
-    line-height: 30px;
-}
-
-.p-card-body-subheading{
-    font-size: 14px;
-    font-family: 'Roboto';
-    color: #5b5b5b;
-}
-
-.welcome-img{
-    width:100%;
-}
-
-.welcome-message{
-    margin-top: 50px;
-}
-
-.p-gray{
-    color:var(--headlineGray);
-}
-
-.p-text{
-    font-size: 16px;
-    line-height: 1.75;
-}
-
-
-.cta-bg{
-    background-color:var(--CtaBg);
-    color:white;
-}
-
-.cta-btn-sm{
-    padding:1rem 2rem;
-    font-size: 18px;
-    border:none;
-    border-radius: 2px;
-    transition:all 20ms ease-in-out;
-}
-
-.cta-btn-sm:hover{
-    box-shadow: 0 1px 2px 0 var(--gm-fillbutton-keyshadow-color,rgba(60,64,67,.3)),0 1px 3px 1px var(--gm-fillbutton-ambientshadow-color,rgba(60,64,67,.15))
-}
-
-
-.mc-card{
-    border:1px solid lightgrey;
-    border-radius: 2px;
-    padding:0;
-    overflow: hidden;
-    transition:all 20ms ease-in-out;
-    box-shadow: 0 1px 2px 0 var(--gm-fillbutton-keyshadow-color,rgba(60,64,67,.3)),0 1px 3px 1px var(--gm-fillbutton-ambientshadow-color,rgba(60,64,67,.15));
-}
-
-.mc-card:hover{
-    box-shadow: 0 2px 4px 0 var(--gm-fillbutton-keyshadow-color,rgba(60,64,67,.3)),0 1px 4px 2px var(--gm-fillbutton-ambientshadow-color,rgba(60,64,67,.15));
-}
-
-.mc-card a{
-    text-decoration: none;
-    color: var(--GBlack);
-}
-
-.mc-card-w{
-    padding:10px;
-}
-
-.mc-img{
-    width: 100%;
-    height: 200px;
-    display: inline-block;
-
-}
-
-.mc-img img{
-   height: 100%;
-   width: 100%;
-   object-fit: cover;
-   object-position: center;
-}
-
-.mc-con{
-    height: 100px;
-    padding:20px;
-    text-align: center;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ramiro Puentes portfolio website, displays my skills and projects completed.">
     
-}
-
-.section-heading{
-    font-family: 'Poppins';
-    font-size: 2.2rem;
-    font-weight: bold;
-    border-bottom:3px solid #747474;
-    color:#555353;
-}
-
-.section-subheading{
-    font-size: 28px;
-    /* border-bottom: 3px solid #747474; */
-    font-weight: bold;
-}
-
-.section-information {
-    font-size: 20px;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color:rgb(102, 102, 102);
-    font-weight: 100;
-}
-
-.nav-style{
-    flex-direction: row-reverse;
-    padding-right: 3em;
-    font-weight: bold;
-    font-size:20px;
-}
-
-.navbar{
-    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
-}
-
-.hero-rp{
-    font-family: 'Poppins';
-   overflow: hidden;
-    position:relative;
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color:white;
-    height:60vh;
-    min-height: 320px;
-}
-
-.hero-greeting{
-    z-index: 100;
-    max-width:100%;
-
-}
-
-.hero-rp span{
-    font-size: 34px;
-}
-
-.name-emphasis{
-    font-size:54px !important;
-    font-weight:bold !important;
-    padding-left:15px;
-    margin-top:15px;
-}
-
-.hello-emphasis{
-    font-size: 80px !important;
-    font-weight: bold;
-}
-
-
-.video-hero{
-    position: absolute;
-    top:0;
-    left:0;
-    margin:auto;
-    z-index: -1;
-    filter: blur(20px);
-    -webkit-filter: blur(20px);
-    transform: translate(-50%, -50%), scale(.95);
-}
-
-
-.portfolio-container{
-    max-width: 85%;
-}
-
-
-.portfolio-card-wrapper{
-    display: flex;
-    gap:25px;
-    justify-content: center;
-    flex-wrap: wrap;
-    row-gap: 50px;
-}
-
-
-.card-body-min{
-    flex: 1 1 auto;
-    padding: var(--bs-card-spacer-y) var(--bs-card-spacer-x);
-    color: var(--bs-card-color);
-}
-
-.card-body{
-    position: relative;
-    /* padding-bottom: 150px; */
-    padding:1rem 2rem 90px;
-}
-
-.card-item{
-    width:30%;
-}
-
-.card-img-top{
-    border-bottom:1px solid lightgrey;
-}
-
-.card-body >p{
-    font-size:15px;
-}
-
-.card-body button{
-    border:NONE;
-    border-radius: 2px;
-    background-color:var(--rpBlue);
-}
-
-.card-body button:hover{
-    background-color:var(--rpBlueActive);
-}
-
-
-.card-body-project-details{
-    position: absolute;
-    bottom:30px;
-    font-size: 14px;
-}
-
-.card-body-project-details p{
-    margin:0;
-}
-
-.card-body-project-details :last-child{
-    margin-top: 20px;
-}
-
-.video-hero{
-    width:100%;
-    height:auto;
-}
-
-/* @media(min-aspect-ratio:16/9){
-    .video-hero{
-        width:100%;
-        height:auto;
-    }
-}
-
-
-@media(max-aspect-ratio:16/9){
-    .video-hero{
-        width:auto;
-        height:100%;
-    }
-} */
-
-.video-overlay{
-    position:absolute;
-    top:0;
-    left:0;
-    background-image:
-    linear-gradient(180deg, rgba(39,54,123,1) 0%, rgba(74,168,220,1) 100%);
-    width: 80%;
-    height: 400px;
-    background-size: cover;
-    color: white;
-    padding: 20px;
-    width:100%;
-    height:100%;
-    opacity: .80;
-}
-
-
-
-.hero-social-list{
-    justify-content: center;
-    align-items: center;
-}
-
-
-.hero-social-list-item{
-    background-color: transparent;
-    color:white;
-    border: none;
-}
-
-.hero-social-list-item:hover{
-    background-color: rgba(0,0,0,.2);
-}
-
-.home-intro{
-    font-family:'Roboto';
-    font-size: 22px;
-    font-weight: bold;
-    color:#5A5A5A;
-}
-
-
-
-.home-image-banner{
-    display:inline-block;
-    width:100%;
-    height:290px;
-    background-image: url("../Images/home-banner-img.png");
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    /* filter: blur(10px);
-    -webkit-filter: blur(10px); */
-    /* background: linear-gradient(180deg, rgba(71,83,128,1) 0%, rgba(74,168,220,1) 100%);  */
-}
-
-.home-image-banner>div{
-    background-image: linear-gradient(180deg, rgba(39,54,123,1) 0%, rgba(74,168,220,1) 100%);
-    height: 100%;
-    width: 100%;
-    opacity: 0.8;
-  
-}
-
-.home-contact{
-    margin-top:9em;
-    /* height: 680px; */
-    width: 100%;
-    color: white;
-    padding: 6em 6em 9em;
-    /* background: rgb(71,83,128);
-    background: linear-gradient(180deg, rgba(71,83,128,1) 0%, rgba(74,168,220,1) 100%);  */
-
-    background: rgb(71,83,128);
-    background: linear-gradient(180deg, rgba(71,83,128,1) 0%, rgba(62,120,190,1) 100%); 
-}
-
-.home-contact-header{
-    font-weight: 600;
-    font-size: 42px;
-    border-color:white;
-    margin-bottom: 1em;
-    color: white;
-}
-
-.home-contact-message{
-    font-size:35px;
-    font-weight: 100;
-    color:white;
-}
-
-.home-contact-button{
-    margin-top:2em;
-    text-align: center;
-    font-size:24px;
-    width:390px;
-    height:75px;
-    /* background-color: #FF7600; */
-    background-color:#e86f06;
-    color:white;
-    border:none;
-    font-weight: 600;
-    box-shadow:1px 1px 3px rgba(0,0,0,.2);
-    transition:all 20ms ease-in-out;
-}
-
- .home-contact-button:hover{
-    cursor:pointer;
-    box-shadow: 4px 4px 8px rgba(0,0,0,.5);
- }
-
-
-
-.home-skill-book{
-    /* background-color:grey; */
-    display:inline-block;
-    width:200px;
-    /* color:white; */
-    padding:.2em 1em;
-    /* font-weight: bold; */
-    /* color:#4d4d4d;
-    color:var(--GBlack); */
-    font-weight: 100;
-    /* transform:rotateX(45); */
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-
-.ra-image{
-    filter:drop-shadow(2px 2px 4px rbga(0,0,0,.3));
-    transition: all 75ms ease-in-out;
-}
-
-.ra-image:hover{
-    filter:drop-shadow(3px 3px 6px rgba(0,0,0,.5));
-    /* box-shadow:5px 5px 8px rgba(0,0,0,.5); */
-}
-
-
-
-.project-group-section{
-    display:flex;
-    flex-direction: column;
+    <link rel="icon" type="image/x-icon" href="./Images/mandalorian.svg"> <!--This is the way-->
+    <title>Ramiro Puentes</title>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link href="./css/Style.css" rel="stylesheet" >
     
-}
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary ">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="index.html">
+      <img src="Images/InitialsLogo.png" alt="RP Initials logo" />
+        
+          
+    </a>
+    <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse nav-style" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Portfolio.html">Portfolio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#ContactMe">Contact</a>
+        </li>
 
-.project-group{
-    display: flex;
-    gap:3em;    
-}
-
-.project-project-title{
-    font-weight: Bold;
-    font-family: 'Poppins';
-}
-
-.project-group-info{
-    font-weight: 100;
-    font-size: 20px;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-
-.project-project-details-btn{
-    height: 50px;
-    width: 250px;
-    font-size: 24px;
-    font-weight: 100;
-    background-color: #01a2e1;
-    margin-top:3em;
-    text-align: center;
-    color:white;
-    box-shadow:1px 2px 3px rgba(0,0,0,.5);
-    border:none;
-    transition:all 20ms ease-in-out;
-}
-
-.project-project-details-btn:hover{
-    cursor:pointer;
-    box-shadow: 4px 4px 8px rgba(0,0,0,.5);
-}
+        <li class="nav-item">
+            <a class="nav-link"  href="About.html">About</a>
+          </li>
+      </ul>
+    </div>
+  </div>
+    </nav>
 
 
-.user-research-image{
-    max-width:100%;
-    margin:auto;
-    display: block;
-}
-
-.project-details-wrapper{
-    padding:1rem;
-}
-
-.project-details-image{
-    max-width:100%;
-    display: block;
-    margin:auto;
-}
-
-/* ABOUT ME */
-.profile-pic{
-    width:340px;
-    border-radius: 50%;
-}
-
- /* OVERRIDES */
-
-.navbar-nav{
-    font-family: 'Roboto';
-    font-weight: bold;
-}
-
-.card{
-    border-radius:5px;
-    box-shadow:1px 1px 6px rgba(0,0,0,.2);
-    transition: all 20ms ease-in-out;
-}
-
-.card:hover{
-    box-shadow: 3px 3px 10px rgba(0,0,0,.2);
-    cursor:pointer;
-}
-
-.card-title{
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-weight: 100;
-    font-size:19px;
-    color:rgb(92, 92, 92);
-}
-
-.card-text{
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-weight: 100;
-}
+<section>
+    <div class="hero-rp">
+        
+        <div class="video-section">
+            <div class="video-overlay"></div>
+            <video class="video-hero" width="1920" height="500" playsinline autoplay muted loop >
+                <source src="./Images/video-hero-bg-c.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video> 
+            
+        </div>
+        <div class="hero-greeting">
+            <span class="hello-emphasis">Hello, world!</span>
+            <h2>I'm <span class="name-emphasis">Ramiro Puentes</span></h2>
+            <span>a Full-stack Web Developer</span>
+            <ul class="list-group list-group-horizontal hero-social-list">
+              <li class="list-group-item hero-social-list-item"><a href="https://www.linkedin.com/in/ramiro-puentes-fullstack-Developer" target="_blank"><img src="./Images/linkedinLogo_white.png" alt="LinkedIn Logo" /></a></li>
+              <li class="list-group-item hero-social-list-item"><a href="https://dribbble.com/Ramp2010" target="_blank"><img src="./Images/dribble_white.png" alt="Dribbble Logo"/></a></li>
+              <li class="list-group-item hero-social-list-item"><a href="https://codepen.io/rpuentes" target="_blank"><img src="./Images/codePen.png" alt="CodePen Logo" /></a></li>
+            </ul>
+        </div>
+    </div>
+</section>
 
 
-.portfolio-card{
-    margin-bottom: 2rem;
-}
+<section class="section-spacing home-intro">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-3 welcome-image-wrapper">
 
+        <img src="./Images/Hello.png" class="welcome-img" alt="Character waving hello" />
+      </div>
+      <div class="col-md-9 col-sm-12">
 
-
-
-
-
-@media (max-width:1300px){
-    .video-hero{
-        width:auto;
-        height:100%;
        
-    }
-}
-
-@media (max-width:1070px){
-    .portfolio-container{
-        max-width:100%;
-    }
-
-    .portfolio-card-wrapper{
-        gap:15px;
-    }
-
-    .card-item{
-        width:45%;
-    }
-  }
-
-  @media (max-width: 926px) { 
-
-    .project-group-info{
-        order:2;
-    }
-
-    .project-group{
-        padding: 1em;
-        margin: 2em auto 9em;
-    }
+        <p class="p-headline5 welcome-message">
+          <span class="p-headline1 p-gray">Welcome </span> 
+          
+          to my online portfolio, where I've condensed a decade of programming expertise into a dynamic showcase. I'm a passionate and dedicated developer, specializing in full-stack development to create elegant solutions for web and mobile applications. Collaboration and continuous learning are vital to my approach, and I believe in contributing positively to the developer community. Explore my projects that showcase creativity, attention to detail, and a drive for excellence. I’m always eager to connect with fellow developers, tech enthusiasts, and potential collaborators. Thank you for visiting, and let’s shape the future together, one line of code at a time!
+        </p>
+      </div>
+      </div>
+  </div>
+</section>
 
 
-    .project-project-details-btn{
-        margin-top:1em;
-    }
+<section class="home-portfolio section-spacing">
+  <div class="container">
+    <div class="row justify-content-center">
 
-    .project-project-details-card-btn{
-        margin-top:10px;
-    }
+      <div class="col-12">
+        <div class="col-3">
+          <p class="p-headline1 p-gray">Portfolio</p>
+        </div>
+      </div>
+      <div class="col-12">
+          <p class="p-text">
+        Below you'll find some highlighted examples in this portfolio represent just a subset of my diverse collection of professional and creative projects, showcasing my passion for innovation and commitment to excellence. Explore the exciting stories behind each project, inviting you to witness my dedication to making a positive impact.
+      </p>
+      </div>
 
-    .home-contact{
-        padding:1em;
-        height:600px;
-    }
+      <div class="row mt-3 mb-5">
+       
+    <div class="col-md-3 mc-card-w">
+      <div class="mc-card">
 
-    .home-contact-button{
-        width:75%;
-    }
+        <a href="ProjectDetails_FresnoCMS.html">
+          
+          <div class="mc-img">
+            <img src="./Images/Project_card_FresnoCMS_2.png" class="card-img-top" alt="Fresno County CMS Migration">
+          </div>
+          <div class="mc-con">
+            <p class="p-headline5 mb-0">SME / Project Lead</p>
+            <p class="p-text">CMS Migration</p>
 
-    .home-contact-header{
-        margin-top:2em;
-    }
+          </div>
+        </a>
+      </div>
+    </div>
+      
+    <div class="col-md-3 mc-card-w">
+      <div class="mc-card">
 
-    .hello-emphasis{
-        font-size:3rem !important;
-    }
+        <a href="ProjectDetails_Parking.html">
+          
+          <div class="mc-img">
+            <img src="./Images/Project_card_Parking2.png" class="card-img-top" alt="Fresno County Parking Application">
+          </div>
+          <div class="mc-con">
+            <p class="p-headline5 mb-0">Developer, Designer, Tester</p>
+            <p class="p-text">New Application</p>
 
-    .name-emphasis{
-        font-size: 2.5rem !important;
-    }
+          </div>
+        </a>
+      </div>
+    </div>
+   
+    <div class="col-md-3 mc-card-w">
+      <div class="mc-card">
 
-    .home-intro{
-        padding: 1em;
-        font-size: 1.2rem;
-    }
+        <a href="ProjectDetails_Wifi.html">
+          
+          <div class="mc-img">
+            <img src="./Images/Project_card_Wifi.png" class="card-img-top" alt="Fresno County Confernce Wifi">
+          </div>
+          <div class="mc-con">
+            <p class="p-headline5 mb-0">Developer, Designer</p>
+            <p class="p-text">New Page</p>
 
-    .section-spacing{
-        margin:2rem auto 5rem;
-    }
+          </div>
+        </a>
+      </div>
+    </div>
+   
+    <div class="col-md-3 mc-card-w">
+      <div class="mc-card">
+
+        <a href="ProjectDetails_PublicHealth.html">
+          
+          <div class="mc-img">
+            <img src="./Images/Project_card_PublicHealth2.png" class="card-img-top" alt="Fresno County Health Inspections App">
+          </div>
+          <div class="mc-con">
+            <p class="p-headline5 mb-0">Developer, Designer</p>
+            <p class="p-text">Application Update</p>
+          </div>
+        </a>
+      </div>
+    </div>
 
 
-    .home-image-banner{
-        height:150px;
-    }
-    
-    .home-portfolio{
-        padding:1rem;
-    }
+      <div class="col-md-3"></div>
+      </div>
+      
 
-    .home-skills{
-        padding:1rem;
-    }
+      <div class="col-md-12">
+        <a href="Portfolio.html">
+          <button class="cta-btn-sm cta-bg"> Explore more of my projects</button>
+        </a>
 
-    .home-recent-achievements{
-        padding:1rem;
-    }
+      </div>
+      
 
-    .home-skill-book{
-        width:auto;
-    }
+    </div>
+  </div>
+</section>
 
-    /* .hero-rp{
-        height:50vh;
-    } */
 
-    .portfolio-container{
-        max-width:100%;
-    }
+<div class="home-image-banner section-spacing"><div></div></div>
 
-    .portfolio-card-wrapper{
-        gap:15px;
-    }
+<section class="home-skills section-spacing">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12">
+        <div class="col-3">
+          <p class="p-headline1 p-gray">Skills</p>
+        </div>
+      </div>
+      <div class="col-12">
+        <p class="p-text">As a versatile developer, I excel in various programming languages, frameworks, and both front-end and back-end development. With a passion for crafting innovative solutions, I'm eager to explore new possibilities and push the boundaries of technology.</p>
+      </div>
 
-    .card-item{
-        width:48%;
-    }
 
-  }
+      <div class="col-12 mt-3">
+        <div class="home-skill-book">Adobe CC</div>
+        <div class="home-skill-book">Illustrator</div>
+        <div class="home-skill-book">Lightroom</div>
+        <div class="home-skill-book">Photoshop</div>
+        <div class="home-skill-book">XD</div>
+        <div class="home-skill-book">Angular</div>
+        <div class="home-skill-book">Atom</div>
+        <div class="home-skill-book">BitBucket</div>
+        <div class="home-skill-book">Brackets</div>
+        <div class="home-skill-book">C#</div>
+        <div class="home-skill-book">.Net Framework</div>
+        <div class="home-skill-book">.Net Core</div>
+        <div class="home-skill-book">CSS</div>
+        <div class="home-skill-book">Docker</div>
+        <div class="home-skill-book">Github</div>
+        <div class="home-skill-book">Html</div>
+        <div class="home-skill-book">Javascript</div>
+        <div class="home-skill-book">Jquery</div>
+        <div class="home-skill-book">KnockoutJs</div>
+        <div class="home-skill-book">MSSql</div>
+        <div class="home-skill-book">MySql</div>
+        <div class="home-skill-book">Oracle</div>
+        <div class="home-skill-book">Python</div>
+        <div class="home-skill-book">Pytorch</div>
+        <div class="home-skill-book">Sketch</div>
+        <div class="home-skill-book">UX/UI</div>
+        <div class="home-skill-book">Visual Basic</div>
+        <div class="home-skill-book">Visual Studio</div>
+        <div class="home-skill-book">Vue JS</div>
+        <div class="home-skill-book">Wordpress</div>
+        <div class="home-skill-book">Azure</div>
+        <div class="home-skill-book">to be continued..</div>
+      </div>
+    </div>
+  </div>
+</section>
 
-  @media(max-width:768px){
-    .welcome-img{
-        width:50%;
-    }
 
-    .welcome-image-wrapper{
-        text-align: center;
-    }
-    
-}
 
-@media(max-width:690px){
-    .video-hero{
-        display:none;
-    }
-    .portfolio-container{
-        max-width:100%;
-    }
 
-    .portfolio-card-wrapper{
-        gap:15px;
-    }
 
-    .card-item{
-        width:85%;
-    }
-}
+<section class="home-recent-achievements section-spacing">
+  <div class="container">
+    <div class="row justify-content-center">
 
-@media (max-width: 576px) { 
+      <div class="col-12">
+        <div class="col-6">
+          <p class="p-headline1 p-gray">Recent Achievements</p>
+        </div>
+      </div>
+      <div class="col-12 mb-3">
+        <p class="p-text">Delighted to share my recent achievements! I've excelled in tackling complex projects, receiving recognition for innovative solutions. Successfully collaborating with diverse teams, I've contributed to significant milestones. Eager to leverage these accomplishments to drive future success. Let's explore how my achievements can elevate your endeavors.</p>
+      </div>
 
-    .project-group-info{
-        order:2;
-    }
+      <div class="col-md-3 col-sm-6" style="text-align: center;">
+        <a href="https://coursera.org/share/028856a97f2a74554aa6e8d29f488453" target="_blank" title="Deep Learning Spcialization AI Tensor Flow">
+          <img src="./Images/achievement_DeepLearning.png" class="card-img-top ra-image" alt="Deep Learning" title="Coming soon." style="border-bottom:none;">
+        </a>
+      </div>
 
-    .project-group{
-        padding: 1em;
-        margin: 2em auto 9em;
-    }
+      <div class="col-md-3 col-sm-6">
+        <a href="https://www.google.com/url?q=https%3A%2F%2Fcoursera.org%2Fshare%2F7bee40c6e7618a9f9fefa2032bfc2273&sa=D&sntz=1&usg=AOvVaw3c_O6jo8PudUlnISnDbvqZ" target="_blank" title="Google Ux Design Certificate">
+          <img src="./Images/achievement_GoogleUx.png" class="card-img-top ra-image" alt="Google Ux UI" style="border-bottom:none;">
+        </a>
+      </div>
+      
+      <div class="col-md-3 col-sm-6">
+        <a href="https://www.google.com/url?q=https%3A%2F%2Fcertificate.algoexpert.io%2FAE-d62dadabb6&sa=D&sntz=1&usg=AOvVaw2Yge--CpWLAp15_rioR18n" target="_blank" title="Algo Expert Certificate">
+          <img src="./Images/achievement_Algorithms.png" class="card-img-top ra-image" alt="Algo Expert" style="border-bottom:none;">
+        </a>
+      </div>
 
-    .project-project-details-btn{
-        margin-top:1em;
-    }
+      <div class="col-md-3 col-sm-6">
+        <a href="https://drive.google.com/file/d/1WOrrruJ9VYYXkcjZyOJc-x7gdmjpPx_n/view?usp=sharing" target="_blank" title="AWS Technical Certificate">
+          <img src="./Images/achievement_AWS_Tech.png" class="card-img-top ra-image" alt="Aws Technical" style="border-bottom:none;">
+        </a>
+      </div>
+      
 
-    .home-contact{
-        padding:1em;
-        height:600px;
-    }
+    </div>
+  </div>
+</section>
 
-    .home-contact-button{
-        width:75%;
-    }
 
-    .home-contact-header{
-        margin-top:2em;
-    }
+<section id="ContactMe" class="home-contact">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-6 col-sm-12" style="text-align: center;">
+        <label class="section-heading home-contact-header">Contact</label>
+        <p class="section-information home-contact-message">Have a question or want to work together?</p>
 
-    .hello-emphasis{
-        font-size:3rem !important;
-    }
-
-    .name-emphasis{
-        font-size: 2.5rem !important;
-    }
-
-    .home-intro{
-        padding: 1em;
-        font-size: 1.2rem;
-        margin-top: 2rem;
-    }
-
-    .home-image-banner{
-        height:150px;
-    }
+      
   
-    .home-portfolio{
-        padding:1rem;
-    }
+        <a href="mailto:rpuentes2020@gmail.com?subject=🤝%20Project%20info.%20Let's%20talk" alt="Send me a message">
+          <button class="home-contact-button" type="button">Reach Out</button>
+      </a>
 
-    .home-skills{
-        padding:1rem;
-    }
+      </div>
+      </div>
+  </div>
+</section>
 
-    .home-recent-achievements{
-        padding:1rem;
-    }
-
-    .home-skill-book{
-        width:auto;
-    }
-
-    .hero-rp{
-        height:50vh;
-    }
-
-    .about-me{
-        padding:1rem;
-    }
-
-    .about-me-philosophy{
-        padding:1rem;
-    }
-
-
-}
-
-
-
-
-
-
-
-/* iPad Portrait */
-@media only screen 
-  and (min-device-width: 768px) 
-  and (max-device-width: 1024px) 
-  and (orientation: portrait) 
-  and (-webkit-min-device-pixel-ratio: 2) {
-
-    .portfolio-container{
-        max-width:100%;
-    }
-
-    .portfolio-card-wrapper{
-        gap:15px;
-    }
-
-    .card-item{
-        width:48%;
-    }
-
-    .hero-rp{
-        height: 40vh;
-    }
-
-    .mc-con{
-        padding:5px;
-    }
-
-    .mc-card-w{
-        width:48%;
-    }
-}
-
-
-/* iPad Landscape */
-@media only screen 
-  and (min-device-width: 768px) 
-  and (max-device-width: 1190px) 
-  and (orientation: landscape) 
-  and (-webkit-min-device-pixel-ratio: 2) {
-
-    .portfolio-container{
-        max-width:100%;
-    }
-
-    .portfolio-card-wrapper{
-        gap:15px;
-    }
-
-    .card-item{
-        width:30%;
-    }
-
-    .video-hero{
-        width:100%;
-        height: auto;
-    }
-
-    .mc-con{
-        padding:5px;
-    }
-}
+</body>
+</html>
