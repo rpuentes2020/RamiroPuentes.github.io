@@ -565,6 +565,17 @@ body{
     margin:auto;
 }
 
+.lofi-images{
+    width: 100%;
+    height: auto;
+}
+
+
+.gif-fit{
+    width: 100%;
+    height: auto;
+}
+
 /* ABOUT ME */
 .profile-pic{
     width:340px;
@@ -608,8 +619,15 @@ body{
 
 
 
+.section-research-images img{
+    width:100%;
+    height: auto;
+}
 
 
+.section-image-item{
+    border:1px solid lightgrey;
+}
 
 @media (max-width:1300px){
     .video-hero{
