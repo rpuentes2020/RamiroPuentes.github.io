@@ -218,10 +218,13 @@ body{
 }
 
 .section-information {
-    font-size: 20px;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color:rgb(102, 102, 102);
-    font-weight: 100;
+    /* font-size: 20px; */
+    /* font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+    /* color:rgb(102, 102, 102); */
+    /* font-weight: 100; */
+
+    font-size: 16px;
+    line-height: 1.75;
 }
 
 .nav-style{
