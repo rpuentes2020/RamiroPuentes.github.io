@@ -767,7 +767,8 @@ body{
     }
 
     .card-item{
-        width:85%;
+        width:100%;
+        margin-bottom: 4rem;;
     }
 }
 
@@ -871,6 +872,7 @@ body{
 
     .card-item{
         width:48%;
+        margin-bottom: 4rem;
     }
 
     .hero-rp{
@@ -904,6 +906,7 @@ body{
 
     .card-item{
         width:30%;
+        margin-bottom: 4rem;
     }
 
     .video-hero{
@@ -915,3 +918,4 @@ body{
         padding:5px;
     }
 }
+
