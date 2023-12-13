@@ -491,9 +491,9 @@ body{
     /* font-weight: bold; */
     /* color:#4d4d4d;
     color:var(--GBlack); */
-    font-weight: 100;
+    /*font-weight: 100;*/
     /* transform:rotateX(45); */
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /*font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
 }
 
 
