@@ -290,6 +290,16 @@ body {
 	height: 100%;
 	opacity: .80;
 }
+.video-gif{
+	left: 0;
+	top:0;
+	width:100%;
+	height: auto;
+	margin: auto;
+	filter: blur(20px);
+	position: absolute;
+	z-index: -1;
+}
 .hero-social-list {
 	justify-content: center;
 	align-items: center;
