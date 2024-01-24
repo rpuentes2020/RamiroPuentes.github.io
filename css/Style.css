@@ -94,6 +94,10 @@ body {
 	font-family: 'Roboto';
 	color: #5b5b5b;
 }
+.p-card-subheading5{
+	font-size:15px;
+	color:#4f4f4f;
+}
 .welcome-img {
 	width: 100%;
 }
