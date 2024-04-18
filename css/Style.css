@@ -111,6 +111,21 @@ body {
 	font-size: 16px;
 	line-height: 1.75;
 }
+.label-ns {
+	user-select: none;
+}
+.list-item-nb{
+	border:none;
+}
+.noPortfolioResults{
+	text-align:center;
+}
+.portfolio-img-noresults{
+	border-radius:50%;
+}
+#projectFilterUl{
+	flex-wrap: wrap;
+}
 .cta-bg {
 	background-color: var(--CtaBg);
 	color: white;
