@@ -3,7 +3,7 @@
 	--rpBlueActive: #0593cb;
 	--headlineGray: #5f6368;
 	--GBlack: #202124;
-	--CtaBg: #e86f06;
+	--CtaBg: #06475a;
 }
 @font-face {
 	font-family: 'Roboto';
@@ -385,7 +385,7 @@ body {
 	width: 390px;
 	height: 75px;
 	/* background-color: #FF7600; */
-	background-color: #e86f06;
+	background-color: #06475a;
 	color: white;
 	border: none;
 	font-weight: 600;
