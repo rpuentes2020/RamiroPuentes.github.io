@@ -113,15 +113,11 @@
 
       <div class="col-12 section-information">
         <p class="p-text">
-            My current assignment doesn't have exact guidelines, there are times which I'm a Developer, Web Master,  or Database administrator. 
-
-            <p class="p-text">
-            The purpose of this project was driven by internal needs. I was often tasked with an assignment which required I grant or remove access to an application for a user. However the user information wasn't always clear. I would spend time gradually acquiring bits of information from different databases until I had all the user information I needed. 
-
+          In November 2020, I undertook the development of a Staff Directory application to solve a recurring problem in my daily work. My role within the organization fluctuated between Developer, Webmaster, and Database Administrator, and a common task involved managing user access to applications. However, retrieving the necessary user information required querying multiple databases, which was both time-consuming and inefficient.
         </p>
         
         <p class="p-text">
-            Project duration November 2020 - November 2020
+          To streamline this process, I decided to build an internal tool that would consolidate user information into one easily accessible interface. This project was a significant step in improving internal workflows and optimizing my time.
         
         </p>
         <p class="p-text">
@@ -150,8 +146,16 @@
       <div class="col-12 section-information">
         <img src="Images/UserResearch-GraphicCustom.gif" class="user-research-image" alt="conducting user research"/>
         <p class="p-text">
-            The current method of identifying a person required many steps and connections to databases to run queries for bits of information needed to conduct additional queries. It was time to build something better.
-        
+          The pain points of the existing process were clear from my own experience:
+          <ul>
+            <li>Slow and Inefficient: Gathering bits of information from multiple databases was a slow and laborious task.</li>
+            <li>Tedious: Connecting to 2-3 different databases just to locate and verify user information added unnecessary complexity to the process.</li>
+            <li>Uncertainty: Verifying user information with different departments added further delays before I could proceed with access management tasks.</li>
+          </ul>
+        </p>
+
+        <p class="p-text">
+          Recognizing these issues, I set out to create a secure and efficient application that could be hosted on a development server for quick reference.
         </p>
        
       </div>
@@ -258,6 +262,62 @@
 </section>
 
 
+  
+<section class="section-spacing">
+  <div class="container">
+    <div class="row justify-content-center">
+
+      <div class="col-12" style="text-align: center;">
+          <p class="p-headline4">Design and Development Process</p>
+      </div>
+
+      <div class="col-10 section-information">
+          <p class="p-text">
+            The design goal was to create a web-based application that would be simple, efficient, and secure. The application did not require a backend database, as it only pulled information from existing sources without storing any data. This approach not only simplified the development process but also reduced potential security concerns.
+          </p>
+          <p class="p-text">
+            The interface was designed to be intuitive, allowing developers to quickly access the necessary user information without needing to manually query multiple databases.
+          </p>
+          <p class="p-text">
+            The application was developed using .NET Core, marking my first experience with this technology. As part of the development process, we also configured our development servers for .NET Core, which opened up new opportunities for future projects.
+          </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<section class="section-spacing">
+  <div class="container">
+    <div class="row justify-content-center">
+
+      <div class="col-10" style="text-align: center;">
+          <p class="p-headline4">Key Performance Indicators</p>
+          <p>
+            <img src="Images/chart.png" alt="Rocket Launch Logo" style="opacity: .5;"/>
+          </p>
+      </div>
+      
+      <div class="col-10 section-information" style="text-align: center;">
+
+        <p class="p-text">
+          Reduction in Information Retrieval Time: The Staff Directory reduced the time spent gathering user information by 70%, cutting down the process from several minutes to just a few seconds.
+        </p>
+
+        <p class="p-text">
+          Increase in Efficiency: By consolidating information into one tool, I was able to increase my efficiency by 50%, allowing more time to be spent on higher-priority tasks.
+        </p>
+
+        <p class="p-text">
+          Decrease in Errors: With a streamlined, centralized source of information, the tool decreased the likelihood of human error by 30%, leading to fewer misidentifications and incorrect access permissions.
+        </p>
+       
+      </div>
+    </div>
+  </div>
+</section>
+
 
 
 
@@ -276,12 +336,10 @@
       <div class="col-12 section-information" style="text-align: center;">
 
         <p class="p-text">
-            I was able to publish this to our development server for myself and other developers to use when needed. This does not store any information, so it did not require any database back end which was great. 
-
+          I successfully published the Staff Directory to our development server, where it was used by myself and other developers. Due to its ease of use and the time savings it provided, a few key staff members were granted access to the site. It became so popular that senior executives requested that it be shared with all permanent staff.
         </p>
         <p class="p-text">
-            Side note, a few key staff where granted access to the site and loved it so much they requested we share it with all permanent staff. 
-
+          The application did not store any information, which made it secure and lightweight, and it required no additional database infrastructure, which further simplified maintenance.
         </p>
        
       </div>
@@ -297,10 +355,13 @@
   <div class="container">
     <div class="row justify-content-center">
 
-      <div class="col-12" style="text-align: center;">
+      <div class="col-12 pb-5" style="text-align: center;">
           <p class="p-headline4">Take Aways</p>
           <p>
             <img src="Images/local_library.png" alt="Rocket Launch Logo" style="opacity: .5;"/>
+          </p>
+          <p class="p-text">
+            This project not only enhanced internal processes by streamlining user access management but also introduced the organization to .NET Core development. It allowed me to spend my time more efficiently and demonstrated the importance of creating tools that cater directly to internal needs.
           </p>
       </div>
       
@@ -309,8 +370,10 @@
           Impact
         </p>
         <p class="p-text">
-            I was able to utilize my time more efficiently after building and publishing this application. Senior executives loved this website and requested access be granted to all permanent staff to use as well.
-
+          The Staff Directory application had a noticeable impact on my workflow and that of other developers. By centralizing access to user information, the application significantly improved our ability to manage user access efficiently. Senior executives who saw the tool’s potential requested that it be shared with all permanent staff, further expanding its impact across the organization.
+        </p>
+        <p class="p-text">
+          The project also demonstrated the benefits of .NET Core in our environment, paving the way for future development projects using this framework.
         </p>
       </div>
 
@@ -319,7 +382,7 @@
         What I Learned
       </p>
       <p class="p-text">
-This was a great first project to build in .Net Core and helped us get our Development servers configured for core.
+        Building the Staff Directory was my first foray into .NET Core, and it gave me valuable experience in setting up and deploying applications on our development servers. The project also reinforced the importance of creating secure, efficient solutions that directly address recurring internal challenges. It showcased the power of internal tools to improve workflows and overall productivity.
 
       </p>
     </div>

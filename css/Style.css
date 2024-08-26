@@ -140,6 +140,57 @@ body {
 .cta-btn-sm:hover {
 	box-shadow: 0 1px 2px 0 var(--gm-fillbutton-keyshadow-color, rgba(60, 64, 67, .3)), 0 1px 3px 1px var(--gm-fillbutton-ambientshadow-color, rgba(60, 64, 67, .15))
 }
+
+
+/* new card styles */
+@media (max-width: 768px) {
+	.carousel-inner .carousel-item > div {
+	  display: none;
+	}
+	.carousel-inner .carousel-item > div:first-child {
+	  display: block;
+	}
+  }
+  
+  .carousel-inner .carousel-item.active,
+  .carousel-inner .carousel-item-start,
+  .carousel-inner .carousel-item-next,
+  .carousel-inner .carousel-item-prev {
+	display: flex;
+	transition-duration: 6s;
+	padding: calc(var(--bs-gutter-x) * .5);
+	/* gap:5px; */
+	/* justify-content: space-between; */
+	/* // transition-duration: 10s; */
+  }
+  
+  /* display 4 */
+  @media (min-width: 768px) {
+	.carousel-inner .carousel-item-right.active,
+	.carousel-inner .carousel-item-next,
+	.carousel-item-next:not(.carousel-item-start) {
+	  transform: translateX(100%) !important;
+	}
+  
+	.carousel-inner .carousel-item-left.active,
+	.carousel-item-prev:not(.carousel-item-end),
+	.active.carousel-item-start,
+	.carousel-item-prev:not(.carousel-item-end) {
+	  transform: translateX(-100%) !important;
+	}
+  
+	.carousel-item-next.carousel-item-start, .active.carousel-item-end {
+	  transform: translateX(0) !important;
+	}
+  
+	.carousel-inner .carousel-item-prev,
+	.carousel-item-prev:not(.carousel-item-end) {
+	  transform: translateX(-100%) !important;
+	}
+  }
+  /* end card styles */
+
+
 .mc-card {
 	border: 1px solid lightgrey;
 	border-radius: 2px;
