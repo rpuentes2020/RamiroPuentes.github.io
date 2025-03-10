@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-R98FW7WCJ7"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-R98FW7WCJ7');
+</script>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ramiro Puentes portfolio website, project concept Mentor application.">
+    <link rel="icon" type="image/x-icon" href="Images/mandalorian.svg">
+    <title>Ramiro Puentes</title>
+    <script src="./js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+    <link href="./css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <link href="./css/Style.css" rel="stylesheet" crossorigin="anonymous">
+    <style>
+         .ul-checks {
+            list-style: none !important;
+            padding: 0;
+        }
+        .ul-checks li {
+            padding: 12px;
+            margin-bottom: 10px;
+            background: #e9f5ff;
+            border-left: 5px solid #007bff;
+            border-radius: 6px;
+            font-size: 18px;
+            display: flex;
+            align-items: center;
+        }
+        /* ul li::before */
+        .ul-checks li::before
+        {
+            content: "✔"; /* Checkmark icon */
+            color: #007bff;
+            font-weight: bold;
+            margin-right: 10px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary ">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="index.html">
+        <img src="Images/InitialsLogo.png" alt="RP Initials logo" />
+        
+    </a>
+    <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse nav-style" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="Portfolio.html">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#ContactMe">Contact</a>
+          </li>
+  
+          <li class="nav-item">
+              <a class="nav-link"  href="About.html">About</a>
+            </li>
+        </ul>
+      </div>
+  </div>
+    </nav>
+
+
+    <section class="section-spacing mb-4">
+      <div class="container">
+        <div class="row justify-content-center">
+    
+          <div class="col-md-12 col-sm-12">
+            
+              <label class="p-headline1 p-gray ">Student Orientation</label>
+            
+          </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Carousel -->
+    <div class="container">
+
+      <div id="carouselExampleCaptions" class="carousel slide " data-bs-ride="carousel" data-bs-wrap=true data-bs-interval="3500">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <!-- <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button> -->
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="Images/Orientation/Orientation.jpeg" class="d-block w-100" alt="New Orientation Website">
+           
+          </div>
+          <div class="carousel-item">
+            <img src="Images/Orientation/Orientation_Canvas.png" class="d-block w-100" alt="Legacy Orientation Website">
+           
+          </div>
+          
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+
+      
+<div class="project-detail-wrapper-2">
+  <div class="container">
+    <!-- Project Title & Summary -->
+    <h1 class="mt-3">Student Orientation</h1>
+    <p class="lead text-muted">A brief description of the project and its purpose.</p>
+
+    <!-- Quick Details Table -->
+    <div class="table-responsive">
+        <table class="table table-bordered">
+            <tbody>
+                <tr><th>Tech Stack</th><td>.NET Core, SQL Server, JavaScript, Bootstrap</td></tr>
+                <tr><th>Project Type</th><td>Full-stack web app</td></tr>
+                <tr><th>Role</th><td>Lead Developer, UX Designer</td></tr>
+                <tr><th>Completion Date</th><td>Dec 2023</td></tr>
+                <!-- <tr><th>Live Demo / GitHub</th><td><a href="#" target="_blank">View Demo</a> | <a href="#" target="_blank">GitHub Repo</a></td></tr> -->
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Project Overview -->
+    <h2 class="p-headline4">Project Overview</h2>
+    <p>The goal of this project was to enhance the user experience by improving design, accessibility, and readability while introducing a 'save progress' feature that 
+      allows students to seamlessly continue their work. The redesign focused on creating a more intuitive and visually clear interface that adheres to WCAG accessibility 
+      standards, ensuring an inclusive and user-friendly experience for all students</p>
+      <p>
+        In addition to enhancing design, accessibility, readability, and implementing a 'save progress' feature for students, the project includes the development of a dedicated 
+        Admin Interface. This interface empowers IT staff to efficiently update and maintain orientation content, ensuring that students receive the most accurate and up-to-date 
+        information.
+      </p>
+
+    <!-- Features -->
+    <h2 class="p-headline4">Key Features</h2>
+    <ul class="ul-checks">
+        <li><strong>Modernized & User-Friendly Design: </strong> Clean, structured UI with intuitive navigation and a mobile-responsive layout.</li>
+        <li><strong>Enhanced Accessibility (WCAG Compliant): </strong> Improved color contrast, keyboard navigability, ARIA labels, and screen reader support.</li>
+        <li><strong>Improved Readability: </strong> Larger fonts, better spacing, simplified layouts, and optional dark mode for optimal viewing.</li>
+        <li><strong>Save & Resume Progress: </strong> Allows students to continue where they left off, reducing frustration and improving usability.</li>
+        <li><strong>Performance & Optimization: </strong> Fast-loading pages, smooth user experience, and optimized backend logic.</li>
+        <li><strong>Secure & Scalable Architecture: </strong> Secure authentication and a scalable design for future feature expansions.</li>
+        <li><strong>Multilingual Support: </strong> Users can choose from multiple languages to enhance accessibility for diverse backgrounds.</li>
+        <li><strong>Administrative Interface: </strong> A dedicated admin panel that enables IT Personnel to easily update and maintain orientation content, ensuring information accuracy and timelines.</li>
+
+     </ul>
+        
+
+    <!-- Screenshot or GIF -->
+     <h2 class="p-headline4">Project Gallery</h2>
+    <img src="Images/Orientation/WireFrameOrientation.png" alt="Wireframe" class="OrientationWireFrame img-fluid my-3">
+    <img src="Images/Orientation/XD_OrientationDesign.jpeg" alt="XD Design" class="OrientationWireFrame img-fluid my-3">
+    <img src="Images/Orientation/Orientation_WholeSite.jpeg" alt="Production Website" class="OrientationWireFrame img-fluid my-3">
+
+    
+
+
+    <!-- Challenges & Solutions -->
+    <h2 class="p-headline4">Challenges & Solutions</h2>
+    <p><strong>Challenge:</strong> Collaborating with a diverse team of 20 professionals presented unique challenges, particularly in coordinating efforts and ensuring 
+      comprehensive testing. To address these, we implemented robust communication strategies and structured testing protocols, which not only streamlined our processes 
+      but also enhanced the overall quality of the project..</p>
+    <p><strong>Solution:</strong></p>
+    <ul>
+      <li><strong>Adoption of the Scaled Agile Framework (SAFe):</strong> This approach promoted alignment and collaboration across all teams, enhancing our ability to scale agile practices effectively.</li>
+      <li><strong>Implementation of the Team Software Process (TSP):</strong> TSP provided a structured framework that improved team organization and productivity, ensuring high-quality software development.</li>
+      <li><strong>Utilization of Collaborative Tools:</strong> We leveraged project management platforms like Smartsheet to enhance collaboration, reduce the need for excessive meetings, and keep all team members aligned.</li>
+  </ul>
+
+
+
+    <!-- Lessons Learned & Future Improvements -->
+    <h2 class="p-headline4">Lessons Learned & Future Improvements</h2>
+    <ul>
+        <li>Learned advanced SQL query optimization and caching strategies.</li>
+        <li>Improved ability to design for high-traffic environments.</li>
+        <li>Future improvement: Implement real-time updates using WebSockets.</li>
+    </ul>
+
+    <!-- Call to Action -->
+    <div class="text-center my-4">
+        <p>Interested in this project? Let's connect!</p>
+        <a href="mailto:your-email@example.com" class="btn btn-primary">Contact Me</a>
+        <a href="https://www.linkedin.com/in/yourprofile" target="_blank" class="btn btn-secondary">View LinkedIn</a>
+    </div>
+</div>
+
+</div>
+
+
+<section id="ContactMe" class="home-contact">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-6 col-sm-12" style="text-align: center;">
+        <label class="section-heading home-contact-header">Contact</label>
+        <p class="section-information home-contact-message">Have a question or want to work together?</p>
+
+      
+  
+        <a href="mailto:rpuentes2010@yahoo.com?subject=🤝%20Project%20info.%20Let's%20talk" alt="Send me a message">
+          <button class="home-contact-button" type="button">Reach Out</button>
+      </a>
+
+      </div>
+      </div>
+  </div>
+</section>
+
+
+
+</body>
+</html>
