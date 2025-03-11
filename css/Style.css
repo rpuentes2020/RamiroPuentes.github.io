@@ -1,5 +1,5 @@
 :root {
-	--rpBlue: #01a2e1;
+	--rpBlue: #164fa4;
 	--rpBlueActive: #0593cb;
 	--headlineGray: #5f6368;
 	--GBlack: #202124;
@@ -139,6 +139,12 @@ body {
 }
 .cta-btn-sm:hover {
 	box-shadow: 0 1px 2px 0 var(--gm-fillbutton-keyshadow-color, rgba(60, 64, 67, .3)), 0 1px 3px 1px var(--gm-fillbutton-ambientshadow-color, rgba(60, 64, 67, .15))
+}
+
+.project-project-details-card-btn{
+	display: block;
+	padding:12px 16px;
+	font-size: 16px;
 }
 
 .linkedinButtonCTA{
