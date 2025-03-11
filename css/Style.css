@@ -721,7 +721,35 @@ body {
 
 	.portfolio-card-section{
 		padding:15px;
+		border:none;
+		box-shadow: none;
 	}
+
+	.portfolio-card-section ul {
+		padding-left: 0;
+	}
+
+	.ul-checks li{
+		border:none;
+		/* background-color: transparent; */
+	}
+
+	.ui-checks li strong {
+        display: block; /* Makes it take full width */
+        width: 100%;
+		margin-bottom: 20px;
+    }
+
+	.portfolio-card-section ul li{
+		display: inline-block;
+	}
+
+	.portfolio-card-section ul li::before{
+		/* content: ''; */
+		display: none;
+	}
+
+
 }
 @media(max-width:768px) {
 	.welcome-img {
