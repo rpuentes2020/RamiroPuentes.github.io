@@ -257,6 +257,17 @@ body {
 	font-size: 16px;
 	line-height: 1.75;
 }
+
+.img-outline{
+	box-shadow: 2px 3px 4px rgba(0,0,0,.3);
+	border-left: 1px solid lightgrey;
+}
+
+.img-linkedin-sm{
+	height:40px;
+
+}
+
 .nav-style {
 	flex-direction: row-reverse;
 	padding-right: 3em;
@@ -342,6 +353,7 @@ body {
 .card-body button:hover {
 	background-color: var(--rpBlueActive);
     cursor: pointer;
+	box-shadow: 3px 3px 10px rgba(0, 0, 0, .2);
 }
 .card-body-project-details {
 	position: absolute;
@@ -547,6 +559,50 @@ body {
 	width: 340px;
 	border-radius: 50%;
 }
+
+
+.portfolio-card-section {
+    max-width: 100%;
+    margin: 40px auto;
+    padding: 5rem 7rem;
+    /* background: #f8f9fa; */
+    border-left: 5px solid #007bff; /* Highlighted left border */
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
+}
+
+.portfolio-card-section h2 {
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 35px;
+    color: #333;
+}
+
+.portfolio-card-section ul {
+    padding-left: 20px;
+}
+
+.portfolio-card-section ul li {
+    font-size: 18px;
+    margin-bottom: 10px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.portfolio-card-section ul li::before {
+    content: "✔"; /* Checkmark icon */
+    color: #007bff;
+    font-weight: bold;
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.li-add::before{
+	content:"+" !important;
+}
+
+
 /* OVERRIDES */
 
 .navbar-nav {
@@ -558,9 +614,9 @@ body {
 	box-shadow: 1px 1px 6px rgba(0, 0, 0, .2);
 	transition: all 20ms ease-in-out;
 }
-.card:hover {
+/* .card:hover {
 	box-shadow: 3px 3px 10px rgba(0, 0, 0, .2);
-}
+} */
 .card-title {
 	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 	font-weight: 100;
@@ -661,6 +717,10 @@ body {
 	}
 	.card-item {
 		width: 48%;
+	}
+
+	.portfolio-card-section{
+		padding:15px;
 	}
 }
 @media(max-width:768px) {
