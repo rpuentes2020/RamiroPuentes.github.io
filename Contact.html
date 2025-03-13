@@ -36,8 +36,8 @@
 					<li class="nav-item">
 						<a class="nav-link" href="Portfolio.html">Portfolio</a>
 					</li>
-					<li class="nav-item">
-						<a class="nav-link active" href="#ContactMe">Contact</a>
+					<li class="nav-item">					
+						<a class="nav-link" href="Contact.html">Contact</a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link" href="About.html">About</a>
@@ -71,15 +71,8 @@
 						<h2 class="p-headline4 text-muted mb-0">Reach Out</h2>
 						<p class="p-text text-muted m-0">Have a question or want to work together?</p>
 					</div>
-				  <form action="https://formspree.io/f/xyzeyqwv" method="POST" class="contact-form">
-					<!-- <label for="subject">What can we help you with?</label>
-					<select id="subject" name="subject">
-						<option value="" disabled selected>Select what we can help you with</option>
-						<option value="general">General Inquiry</option>
-						<option value="support">Technical Support</option>
-						<option value="feedback">Feedback</option>
-					</select> -->
-			
+				  <form id="contactForm" action="https://formspree.io/f/xyzeyqwv" method="POST" class="contact-form">
+								
 					<label for="name">Name</label>
 					<input type="text" id="name" name="name" required>
 			
@@ -91,6 +84,9 @@
 			
 					<button type="submit">Send</button>
 				</form>
+
+
+
 				</div>
 		  
 			  </div>
@@ -122,4 +118,28 @@
   </div>
 </section>
 </body>
+
+<script>
+	document.getElementById("contactForm").addEventListener("submit", function(event) {
+		event.preventDefault(); // Prevents default form submission
+	
+		let form = this;
+		let formData = new FormData(form);
+	
+		fetch(form.action, {
+			method: form.method,
+			body: formData,
+			headers: { 'Accept': 'application/json' }
+		}).then(response => {
+			if (response.ok) {
+				window.location.href = "contactThankyou.html"; // Redirect to thank you page
+			} else {
+				alert("There was an issue submitting the form. Please try again.");
+			}
+		}).catch(error => {
+			console.error("Form submission error:", error);
+			alert("There was an issue submitting the form. Please try again.");
+		});
+	});
+	</script>
 </html>
