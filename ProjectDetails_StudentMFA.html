@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-R98FW7WCJ7"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-R98FW7WCJ7');
+  </script>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ramiro Puentes portfolio website, project concept Mentor application.">
+  <link rel="icon" type="image/x-icon" href="Images/mandalorian.svg">
+  <title>Ramiro Puentes</title>
+  <script src="./js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+  <link href="./css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+  <link href="./css/Style.css" rel="stylesheet" crossorigin="anonymous">
+  <style>
+    .ul-checks {
+      list-style: none !important;
+      padding: 0;
+    }
+
+    .ul-checks li {
+      padding: 12px;
+      margin-bottom: 10px;
+      background: #e9f5ff;
+      border-left: 5px solid #007bff;
+      border-radius: 6px;
+      font-size: 18px;
+      display: flex;
+      align-items: center;
+    }
+
+    /* ul li::before */
+    .ul-checks li::before {
+      content: "✔";
+      /* Checkmark icon */
+      color: #007bff;
+      font-weight: bold;
+      margin-right: 10px;
+      font-size: 20px;
+    }
+
+    .mobile-image-group{
+      display:flex;
+      flex-direction:row;
+      justify-content: center;
+      gap:15px;
+      flex-wrap:wrap;
+    }
+    .mobile-image-group img{
+      width:40%;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary ">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">
+        <img src="Images/InitialsLogo.png" alt="RP Initials logo" />
+
+      </a>
+      <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse nav-style" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="Portfolio.html">Portfolio</a>
+          </li>
+        	<li class="nav-item">					
+						<a class="nav-link" href="Contact.html">Contact</a>
+					</li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="About.html">About</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <section class="section-spacing mb-4">
+    <div class="container">
+      <div class="row justify-content-center">
+
+        <div class="col-md-12 col-sm-12">
+
+          <label class="p-headline1 p-gray ">Student Multifactor Authentication</label>
+
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <!--Carousel -->
+  <div class="container mb-5">
+
+    <div id="carouselExampleCaptions" class="carousel slide " data-bs-ride="carousel" data-bs-wrap=true
+      data-bs-interval="3500">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <!-- <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button> -->
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="Images/StudentMFA/StudentMFA_1.jpeg" class="d-block w-100"
+            alt="New Student Multifactor Website">
+
+        </div>
+
+        <!-- <div class="carousel-item">
+          <img src="Images/Orientation/Orientation_Canvas.png" class="d-block w-100" alt="Legacy Orientation Website">
+
+        </div> -->
+
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+
+
+
+
+  <div class="project-detail-wrapper container">
+
+    <section class="section-spacing portfolio-card-section">
+
+      <!-- Project overview -->
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 d-none d-md-block">
+            <img src="Images/Portfolio_Shared/ProjectOverviewPointsTall.png" alt="Map icons leading to each other"
+              style="max-width: 100%;" />
+          </div>
+          <div class="col-md-9">
+            <h2 class="head-title text-muted">Project Overview</h2>
+            <p class="lead text-muted">The Student MFA Management project was launched to encourage voluntary student enrollment 
+              in Multi-Factor Authentication (MFA) ahead of a future enforcement policy. The goal was to provide a smooth 
+              onboarding experience that minimized support overhead and allowed students to set up MFA without assistance.</p>
+            <p>
+            <p class="lead text-muted">​By introducing MFA gradually, issues could be identified early, and the help desk 
+              could be spared an overwhelming influx of support tickets during full enforcement.</p>
+
+
+            <!-- Quick Details Table -->
+            <div class="table-responsive mt-5">
+              <table class="table table-bordered">
+                <tbody>
+                  <tr>
+                    <th>Tech Stack</th>
+                    <td>.NET Core, Microsoft Graph, JavaScript, Bootstrap</td>
+                  </tr>
+                  <tr>
+                    <th>Project Type</th>
+                    <td>Full-stack web app</td>
+                  </tr>
+                  <tr>
+                    <th>Role</th>
+                    <td>Lead Developer, UX Designer</td>
+                  </tr>
+                  <tr>
+                    <th>Completion Date</th>
+                    <td>Jul 2025</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+
+    </section>
+
+
+    <section class="section-spacing portfolio-card-section">
+
+      <!-- Key Features -->
+      <div class="container">
+        <div class="row">
+          <div class="col-md-2 d-none d-md-block">
+            <img src="Images/Portfolio_Shared/RequirementsLogo.png" alt="Lightbulb" style="max-width: 100%;" />
+          </div>
+          <div class="col-md-10 col-sm-12">
+            <h2 class="head-title text-muted">Key Features</h2>
+            <ul class="ul-checks">
+              <li><strong>Self-Service MFA Enrollement:</strong>
+                <span>Students can sign up for MFA via an intuitive, mobile-friendly UI.</span>
+              </li>
+              <li><strong>Real-Time Group Assignment:</strong>
+                <span>Enrollment automatically adds the student to a pre-configured Entra group.</span>
+              </li>
+              <li><strong>Guided Enrollment Flow:</strong>
+                <span>The app verifies MFA status and provides clear next steps, ensuring students have completed the setup correctly.</span>
+              </li>
+              <li><strong>Policy Awareness :</strong>
+                <span>UI includes links to institutional documentation and reflects the MFA strategy and policy.</span>
+              </li>
+             
+
+            </ul>
+
+
+          </div>
+
+        </div>
+      </div>
+
+
+    </section>
+
+
+
+
+    <section class="section-spacing portfolio-card-section">
+
+      <!-- Screenshot or GIF -->
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 d-none d-md-block">
+            <img src="Images/Portfolio_Shared/GalleryLogo_Tall2.png" alt="Lightbulb" style="max-width: 100%;" />
+          </div>
+          <div class="col-md-9">
+            <h2 class="head-title text-muted">Project Gallery</h2>
+            <img src="Images/StudentMFA/Wireframe1.png" 
+            class="img-fluid my-3">
+            <hr>
+            <img src="Images/StudentMFA/Wireframe2.png"
+            class="img-fluid my-3">
+            <hr>
+            
+            <img src="Images/StudentMFA/StudentMFA_Mobile.png" alt="Student MFA"
+              class=" img-fluid my-3">
+
+            <img src="Images/StudentMFA/StudentMFA_1.jpeg" alt="Student MFA"
+              class=" img-fluid my-3">
+              
+            <img src="Images/StudentMFA/StudentMFA_2.jpeg" alt="Student MFA"
+              class=" img-fluid my-3">
+              
+            <img src="Images/StudentMFA/StudentMFA_3.jpeg" alt="Student MFA"
+              class=" img-fluid my-3">
+              
+              
+            <div class="mobile-image-group">
+
+              
+              <img src="Images/StudentMFA/StudentMFA_Mobile_1.png" alt="Student MFA"
+              class=" img-fluid my-3">
+              
+              <img src="Images/StudentMFA/StudentMFA_Mobile_2.png" alt="Student MFA"
+              class=" img-fluid my-3">
+              
+              <img src="Images/StudentMFA/StudentMFA_Mobile_3.png" alt="Student MFA"
+              class=" img-fluid my-3">
+              
+            </div>
+              
+          </div>
+
+        </div>
+      </div>
+
+
+    </section>
+
+
+
+    <section class="section-spacing portfolio-card-section">
+
+      <!-- Design & Development Insights -->
+      <div class="container">
+        <div class="row">
+          <div class="col-md-2 d-none d-md-block">
+            <img src="Images/Portfolio_Shared/IdeaLogo_purple.png" alt="Lightbulb" style="max-width: 100%;" />
+          </div>
+          <div class="col-md-10">
+            <!-- <h2 class="head-title text-muted">Design & Development Insights</h2>
+            <div class="insight">
+              <h3>Designing for Student Impact</h3>
+              <p><strong>Solution:</strong> I focused on <strong>creating a user-friendly interface</strong> that allows
+                IT staff to efficiently manage quiz content while ensuring updates are instantly reflected in the
+                <strong>student-facing orientation quiz</strong>. This streamlined workflow minimizes errors and
+                enhances the overall student experience.</p>
+            </div>
+
+            <div class="insight">
+              <h3>Balancing Functionality with Simplicity</h3>
+              <p><strong>Solution:</strong> Instead of overcomplicating the dashboard, I designed a <strong>minimalist,
+                  intuitive UI</strong> with clear navigation. This ensures that IT personnel can post updates
+                <strong>without requiring technical expertise</strong>, making content management quick and hassle-free.
+              </p>
+            </div>
+
+            <div class="insight">
+              <h3>Ensuring a Smooth Workflow for Content Updates</h3>
+              <p><strong>Solution:</strong> To enhance efficiency, I implemented a <strong>real-time update
+                  mechanism</strong> that allows IT staff to preview and publish quiz modifications immediately. This
+                removes the need for manual refreshes or system restarts, improving the responsiveness of the platform.
+              </p>
+            </div>
+
+            <div class="insight">
+              <h3>Making the Project Fun & Engaging to Work On</h3>
+              <p><strong>Solution:</strong> Since I had complete control over <strong>development, UI/UX design, and
+                  graphics</strong>, I leveraged <strong>modern UI trends, interactive elements, and custom visual
+                  assets</strong> to create a polished and engaging admin dashboard. This creative freedom made the
+                development process both enjoyable and highly effective.</p>
+            </div> -->
+
+
+
+             <h2>🧠 Design and Development Insights</h2>
+
+  <p>As the <strong>solo designer, developer, and tester</strong>, I was responsible for every stage of this project — from UX planning to final deployment. This gave me full ownership over the product experience and allowed for tight integration between design decisions and backend functionality.</p>
+
+  <h3>🔷 Design Philosophy</h3>
+  <p>I prioritized <strong>clarity, accessibility, and trust</strong> throughout the user interface. The target audience consisted of college students with mixed levels of technical confidence, so the design needed to be welcoming and frictionless.</p>
+  <ul>
+    <li>A <strong>single call-to-action</strong> to avoid decision paralysis</li>
+    <li><strong>Mobile-first layout</strong> to match student browsing habits</li>
+    <li>Styling aligned with <strong>institutional branding and accessibility standards</strong> (WCAG 2.1 AA)</li>
+  </ul>
+
+  <h3>🔷 User Experience Goals</h3>
+  <p>I designed the app to be <strong>intelligent and responsive</strong>:</p>
+  <ul>
+    <li>Automatically hides the MFA setup option if the student is already enrolled</li>
+    <li>Provides real-time feedback and guidance through the enrollment flow</li>
+    <li>Requires no training or help desk support to use</li>
+  </ul>
+
+  <h3>🔷 Development Highlights</h3>
+  <ul>
+    <li><strong>Microsoft Graph API Integration:</strong> Secure, app-only authentication to Entra ID (Azure AD), allowing real-time group verification and assignment.</li>
+    <li><strong>Responsive UI Implementation:</strong> Custom CSS and HTML optimized for mobile and accessibility, including screen reader and keyboard support.</li>
+    <li><strong>Testing Without a Dev Directory:</strong> Built-in fail-safes and logic checks to avoid affecting live accounts during development.</li>
+  </ul>
+
+  <h3>🔷 Security & Privacy Compliance</h3>
+  <p>I adhered to <strong>FERPA guidelines</strong> and ensured that no student data was stored in the application. All authentication was handled through secure sessions, and Microsoft Graph API calls were scoped and logged with proper error handling.</p>
+
+          </div>
+
+        </div>
+      </div>
+
+
+    </section>
+
+
+    <section class="section-spacing portfolio-card-section">
+      <!-- Lessons Learned & Future Improvements -->
+      <div class="container">
+        <div class="row">
+          <div class="col-md-2 d-none d-md-block">
+            <img src="Images/Portfolio_Shared/CheckLogo_300.png" alt="Lightbulb" style="max-width: 100%;" />
+          </div>
+          <div class="col-md-10">
+            <h2 class="head-title text-muted">Lessons Learned & Future Improvements</h2>
+
+            <div class="lesson">
+              <h3>Refining Full-Stack Development Workflow</h3>
+              <p>Since I handled <strong>both development and design</strong>, I streamlined my approach to balancing
+                <strong>backend logic with UI/UX considerations</strong> for a seamless experience.
+              </p>
+            </div>
+
+            <div class="lesson">
+              <h3>Enhancing UI/UX Best Practices</h3>
+              <p>This project reinforced the importance of <strong>design consistency, accessibility, and user-centric
+                  layouts</strong>, ensuring IT staff could
+                <strong>easily navigate the admin dashboard</strong>.
+              </p>
+            </div>
+
+            <div class="lesson">
+              <h3>Optimizing Content Management for IT Staff</h3>
+              <p>Designing a <strong>custom admin dashboard</strong> taught me how to <strong>simplify
+                  workflows</strong> for non-technical users while maintaining
+                <strong>backend flexibility</strong> for future updates.
+              </p>
+            </div>
+
+            <div class="lesson">
+              <h3>Improved Graphic & UI Design Efficiency</h3>
+              <p>Handling <strong>all visual assets and UI components</strong> gave me the opportunity to refine my
+                <strong>design workflow</strong>,
+                from wireframing to final implementation, making future projects faster and more polished.</p>
+            </div>
+
+            <div class="lesson">
+              <h3>Future Improvement: Expanding Role-Based Permissions</h3>
+              <p>While the dashboard is functional, a <strong>future enhancement</strong> could include <strong>granular
+                  user roles</strong> with different
+                access levels for content updates, offering more <strong>security and control</strong>.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+
+    </section>
+
+    <!-- back to more work -->
+    <section class="section-spacing">
+      <div class="container">
+        <div class="row justify-content-center">
+
+          <a href="Portfolio.html" alt="More work">
+            <button class="home-contact-button" type="button">More Work</button>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+
+	<section id="ContactMe" class="home-contact">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-md-6 col-sm-12 text-center">
+					<label class="section-heading home-contact-header">Contact</label>
+					<p class="section-information home-contact-message">Have a question or want to work together?</p>
+					<a href="Contact.html" alt="Send me a message">
+						<button class="home-contact-button" type="button">Reach Out</button>
+					</a>
+
+					<a href="https://www.linkedin.com/in/ramiro-puentes-fullstack-developer/" target="_blank">
+						<button class="btn btn-link text-white linkedinButtonCTA" type="button ">
+							<img src="Images/LinkedinLogo_sm.png" alt="Linkedin Logo" class="img-linkedin-sm" />
+							View LinkedIn
+						</button>
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+</body>
+
+</html>
