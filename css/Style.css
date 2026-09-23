@@ -5,60 +5,9 @@
 	--GBlack: #202124;
 	--CtaBg: #06475a;
 }
-@font-face {
-	font-family: 'Roboto';
-	src: url(../Fonts/Roboto-Regular.ttf);
-	font-weight: 700;
-	font-style: normal;
-	/* src:url(../Fonts/Roboto-Bold.ttf);
-    src:url(../Fonts/Roboto-Medium.ttf);
-    src:url(../Fonts/Roboto-Thin.ttf) */
-}
-@font-face {
-	font-family: 'RobotoBold';
-	src: url(../Fonts/Roboto-Bold.ttf);
-	font-weight: 700;
-	font-style: normal;
-}
-@font-face {
-	font-family: 'RobotoMedium';
-	src: url(../Fonts/Roboto-Medium.ttf);
-	font-weight: 700;
-	font-style: normal;
-}
-@font-face {
-	font-family: 'RobotoThin';
-	src: url(../Fonts/Roboto-Thin.ttf);
-	font-weight: 700;
-	font-style: normal;
-}
-@font-face {
-	font-family: 'Poppins';
-	src: url(../Fonts/Poppins-Regular.ttf);
-	font-weight: 700;
-	font-style: normal;
-}
-@font-face {
-	font-family: 'PoppinsBold';
-	src: url(../Fonts/Poppins-Bold.ttf);
-	font-weight: 700;
-	font-style: normal;
-}
-@font-face {
-	font-family: 'PoppinsLight';
-	src: url(../Fonts/Poppins-Light.ttf);
-	font-weight: 700;
-	font-style: normal;
-}
-@font-face {
-	font-family: 'PoppinsThin';
-	src: url(../Fonts/Poppins-Thin.ttf);
-	font-weight: 700;
-	font-style: normal;
-}
 body {
 	/* font-family: 'Roboto','Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
-	font-family: 'Roboto', 'Arial', 'Helvetica', 'sans-serif';
+	font-family: Roboto, 'Segoe UI', Arial, Helvetica, sans-serif;
 	font-size: 16px;
 	/* font-weight: bold; */
 	color: var(--GBlack);
@@ -71,7 +20,7 @@ body {
 	width: 100%;
 }
 .p-headline1 {
-	font-family: 'Poppins';
+	font-family: Roboto, 'Segoe UI', Arial, Helvetica, sans-serif;
 	font-size: 36px;
 	font-weight: 400;
 	letter-spacing: -.5px;
@@ -163,7 +112,21 @@ body {
 }
 
 
+.mw-100{
+	max-width:100%;
+}
 
+.p-2r{
+	padding:2rem;
+}
+
+.mbr-2{
+	margin-bottom:2rem !important;
+}
+
+.mtr-2{
+	margin-top:2rem !important;
+}
 
 .contact-form {
 	background: white;
@@ -263,7 +226,18 @@ body {
 
 
 
+.card-header-w-icon{
+	display: flex !important;
+  width: 100%;
+  justify-content: start;
+  align-items: center;
+  gap: 20px;
+  margin: 0;
+}
 
+.card-header-w-icon > img{
+	margin:0 !important;
+}
 
 /* new card styles */
 @media (max-width: 768px) {
@@ -350,7 +324,7 @@ body {
 	text-align: center;
 }
 .section-heading {
-	font-family: 'Poppins';
+	font-family: Roboto, 'Segoe UI', Arial, Helvetica, sans-serif;
 	font-size: 2.2rem;
 	font-weight: bold;
 	border-bottom: 3px solid #747474;
@@ -390,7 +364,7 @@ body {
 	box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
 }
 .hero-rp {
-	font-family: 'Poppins';
+	font-family: Roboto, 'Segoe UI', Arial, Helvetica, sans-serif;
 	overflow: hidden;
 	position: relative;
 	display: flex;
@@ -614,7 +588,7 @@ body {
 }
 .project-project-title {
 	font-weight: Bold;
-	font-family: 'Poppins';
+	font-family: Roboto, 'Segoe UI', Arial, Helvetica, sans-serif;
 }
 .project-group-info {
 	font-weight: 100;

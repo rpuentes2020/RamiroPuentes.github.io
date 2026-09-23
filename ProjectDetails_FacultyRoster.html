@@ -1,574 +1,227 @@
 <!DOCTYPE html>
+
 <html lang="en">
-
 <head>
-  <!-- Google tag (gtag.js) -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-R98FW7WCJ7"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag() { dataLayer.push(arguments); }
-		gtag('js', new Date());
+<!-- Google tag (gtag.js) -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-R98FW7WCJ7"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-		gtag('config', 'G-R98FW7WCJ7');
-	</script>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Ramiro Puentes portfolio website, project concept Mentor application.">
-  <link rel="icon" type="image/x-icon" href="./Images/mandalorian.svg">
-  <title>Ramiro Puentes</title>
-  <script src="./js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
-  <link href="./css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
-  <link href="./css/Style.css" rel="stylesheet" crossorigin="anonymous">
-
-</head>
-
-<body>
-  <nav class="navbar navbar-expand-lg bg-body-tertiary ">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="index.html">
-        <img src="Images/InitialsLogo.png" alt="RP Initials logo" />
-
-      </a>
-      <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse nav-style" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="Portfolio.html">Portfolio</a>
-          </li>
-          <li class="nav-item">					
-						<a class="nav-link" href="Contact.html">Contact</a>
-					</li>
-
-          <li class="nav-item">
-            <a class="nav-link" href="About.html">About</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-
-  <section class="section-spacing mb-4">
-    <div class="container">
-      <div class="row justify-content-center">
-
-        <div class="col-md-12 col-sm-12">
-
-          <label class="p-headline1 p-gray ">Faculty Roster</label>
-
-        </div>
-      </div>
-    </div>
-    </div>
-  </section>
-
-  `
-
-
-  <!--Carousel -->
-  <div class="container">
-
-    <div id="carouselExampleCaptions" class="carousel slide " data-bs-ride="carousel" data-bs-wrap=true
-      data-bs-interval="5500">
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-          aria-current="true" aria-label="Slide 1"></button>
-        <!-- <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button> -->
-      </div>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="Images/FacultyRoster/FacultyRosterWebLayout.png" class="d-block w-100"
-            alt="Faculty Traffic Single Page">
-        </div>
-
-        <!-- <div class="carousel-item ">
-            <img src="Images/PreferredName_Desktop_Pending.jpeg" class="d-block w-100" alt="Preferred Name App Pending">           
-          </div>
-
-          <div class="carousel-item ">
-            <img src="Images/PreferredName_Desktop_AdminReview.png" class="d-block w-100" alt="Preferred Name App Admin Review">           
-          </div>
-
-          <div class="carousel-item ">
-            <img src="Images/PreferredName_Desktop_AdminReview2.png" class="d-block w-100" alt="Preferred Name App Admin Search">     
-          </div>
-
-          <div class="carousel-item ">
-            <img src="Images/PreferredName_Desktop_Approved.jpeg" class="d-block w-100" alt="Preferred Name App Approved">
-          </div> -->
-
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-        data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-        data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
-  </div>
-
-
-
-
-
-  <div class="project-details-wrapper">
-
-    <!-- PROJECT OVERVIEW -->
-    <section class="section-spacing">
-      <div class="container">
-        <div class="row justify-content-center">
-
-          <div class="col-12">
-            <!-- <div class="col-6"> -->
-            <p class="p-headline4">Project Overview</p>
-            <!-- </div> -->
-          </div>
-
-          <div class="col-12 section-information">
-            <p class="p-text">
-              Between November 2023 and December 2023, I led a project to create a Faculty Roster retrieval page in response to unusual performance spikes on our main platform. The goal was to provide Faculty with a way to access their instructional section rosters without disruption, even during high traffic periods.
-            </p>
-            <p class="p-text">
-
-            </p>
-
-            <p class="p-text">
-              My role in this project was multifaceted, as I took on the responsibilities of Lead UX Designer, UX Researcher, UX Tester, DBA, and Developer. The result was a single-page web application that was not only user-friendly and accessible but also integrated with the backend to retrieve roster data efficiently.
-            </p>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-
-
-
-
-    <!-- USER RESEARCH -->
-    <section class="section-spacing">
-      <div class="container">
-        <div class="row justify-content-center">
-
-          <div class="col-12" style="text-align: center;">
-            <p class="p-headline4">User Research</p>
-          </div>
-
-          <div class="col-10 section-information pb-5">
-            <img src="Images/UserResearch-GraphicCustom.gif" class="user-research-image"
-              alt="conducting user research" />
-            <p class="p-text">
-              To ensure the new Faculty Roster page met user needs, I conducted extensive user research by examining the existing roster displays in our Student software. This helped me understand what Faculty were accustomed to seeing. Additionally, I researched best practices and alternative roster layouts online to guide my design process.
-            </p>
-
-            <p class="p-text">
-              The following core requirements were identified during the research phase:
-            </p>
-            <ul>
-              <li>Ease of Use: The page needed to be intuitive and straightforward</li>
-              <li>Accessibility: It was essential for the page to be fully accessible, following WCAG standards</li>
-              <li>Printability: Faculty needed the option to print their rosters easily</li>
-              <li>Comprehensive Display: The page needed to show enrolled, dropped, and waitlisted students clearly and concisely</li>
-            </ul>
-            <p class="p-text">
-              These requirements guided the design and development of the prototypes and final product.
-            </p>
-          </div>
-
-          <div class="col-md-12 row section-research-images">
-            <div class="col-md-5 offset-md-1 section-image-item mb-5">
-              <p class="p-headline4 text-center m-3">Education Software</p>
-              <img src="Images/FacultyRoster/FacultyRoster_Research1.png" alt="Applicaiton Inspiration page 1" />
-            </div>
-            <div class="col-md-5 offset-md-1 section-image-item mb-5">
-              <p class="p-headline4 text-center m-3">Sample Roster 1</p>
-              <img src="Images/FacultyRoster/FacultyRoster_Research2.png" alt="Applicaiton Inspiration page 2" />
-            </div>
-            <div class="col-md-5 offset-md-1 section-image-item mb-5">
-              <p class="p-headline4 text-center m-3">Sample Roster 2</p>
-              <img src="Images/FacultyRoster/FacultyRoster_Research3.png" alt="Applicaiton Inspiration page 3" />
-            </div>
-
-
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-
-    <!-- Competitive Audit  WORKFLOWS -->
-    <!-- <section class="section-spacing">
-    <div class="container">
-      <div class="row justify-content-center">
-  
-        <div class="col-12" style="text-align: center;">
-            <p class="p-headline4">Application Workflow</p>
-        </div>
-  
-        <div class="col-12 section-information">
-            <p class="p-text">
-                A requirement for this project was to allow users to make multiple submissions so long as they don't already have a concurrent submission still pending.
-            </p>
-            <p class="p-text">
-                This made the workflow easy to visualize.
-            </p>
-            <img src="Images/PreferredName_Workflow2.png" class="project-details-image" alt="conducting user research"/>
-         
-        </div>
-  
-      </div>
-    </div>
-  </section> -->
-
-
-
-
-
-    <!-- Pain Points -->
-    <!-- <section class="section-spacing">
-  <div class="container">
-    <div class="row justify-content-center">
-
-      <div class="col-12" style="text-align: center;">
-          <p class="p-headline4">Pain Points</p>
-      </div>
-      
-      <div class="col-md-4 col-sm-12 section-information" style="text-align: center;">
-        <img src="Images/excl_Logo.png" alt="Exclamation Icon" />
-        <p class="p-headline5">Where is the page</p>
-        <p class="p-text">
-            Difficult to naviage to the page
-        </p>
-      </div>
-
-
-      <div class="col-md-4 col-sm-12 section-information" style="text-align: center;">
-        <img src="Images/excl_Logo.png" alt="Exclamation Icon" />
-        <p class="p-headline5">Did that work</p>
-        <p class="p-text">
-            Not sure if the submission was received
-        </p>
-      </div>
-
-
-      <div class="col-md-4 col-sm-12 section-information" style="text-align: center;">
-        <img src="Images/excl_Logo.png" alt="Exclamation Icon" />
-        <p class="p-headline5">I Guess I'll Follow Up</p>
-        <p class="p-text">
-            No response received when submission processed
-        </p>
-      </div>
-
-     
-
-    </div>
-  </div>
-</section> -->
-
-
-<section class="section-spacing">
-  <div class="container">
-    <div class="row justify-content-center">
-
-      <div class="col-12" style="text-align: center;">
-          <p class="p-headline4">Design and Development Process</p>
-      </div>
-
-      <div class="col-10 section-information">
-          <p class="p-text">
-            With a clear understanding of user needs, I began designing several prototype layouts for the Faculty Roster page. Each mockup was aimed at providing a clean, accessible, and easily navigable interface that could be quickly understood by Faculty members.          </p>
-          <p class="p-text">
-            The development process involved not only front-end work but also back-end optimization. I created a new stored procedure to handle the retrieval of roster data from multiple tables and optimized an existing stored procedure's performance from 4 seconds to under 1 second. Collaborating closely with the DBAs, I ensured that the backend was robust and scalable, even during peak usage times.          </p>
-        
-      </div>
-
-    </div>
-  </div>
+    gtag('config', 'G-R98FW7WCJ7');
+  </script>
+<meta charset="utf-8"/>
+<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="Ramiro Puentes portfolio website, Faculty Roster project — helps instructional faculty quickly access course and student roster information." name="description"/>
+<link href="Images/mandalorian_w.ico" rel="icon" type="image/x-icon"/>
+<title>Faculty Roster | Ramiro Puentes</title>
+<script crossorigin="anonymous" src="./js/bootstrap.bundle.min.js"></script>
+<link crossorigin="anonymous" href="./css/bootstrap.min.css" rel="stylesheet"/>
+<link crossorigin="anonymous" href="./css/Style.css" rel="stylesheet"/>
+<meta content="#f8fafd" name="theme-color"/><link href="css/portfolio-v2.css" rel="stylesheet"/><link href="css/project-material.css" rel="stylesheet"/><script defer="" src="js/portfolio-v2.js"></script><link href="css/material-polish.css" rel="stylesheet"/></head>
+<body class="project-page" data-project-title="Faculty Roster">
+<a class="skip-link" href="#main">Skip to content</a><header class="site-header">
+<div class="shell nav-shell">
+<a aria-label="Ramiro Puentes home" class="brand" href="index.html">
+<span class="brand-mark">RP</span><span class="brand-name">Ramiro Puentes</span>
+</a>
+<button aria-controls="site-nav" aria-expanded="false" class="nav-toggle" type="button"><span class="nav-toggle-icon" aria-hidden="true"></span><span class="nav-toggle-label">Menu</span></button>
+<nav aria-label="Primary navigation" class="site-nav" id="site-nav">
+<ul>
+<li><a class="nav-link" href="index.html">Home</a></li>
+<li><a aria-current="page" class="nav-link active" href="Portfolio.html">Portfolio</a></li>
+<li><a class="nav-link" href="About.html">About</a></li>
+<li><a class="nav-link" href="Contact.html">Contact</a></li>
+</ul>
+</nav>
+</div>
+</header><main id="main"><section class="project-page-hero shell">
+<a aria-label="Back to portfolio" class="project-back" href="Portfolio.html">← Back to portfolio</a>
+<p class="eyebrow">CASE STUDY</p>
+<h1>Faculty Roster</h1>
+</section><!--Carousel --><div class="container mb-5 project-showcase">
+<div class="carousel slide" data-bs-interval="3500" data-bs-ride="carousel" data-bs-wrap="true" id="carouselExampleCaptions">
+<div class="carousel-indicators">
+<button aria-current="true" class="active" aria-label="Slide 1" data-bs-slide-to="0" data-bs-target="#carouselExampleCaptions" type="button"></button>
+</div>
+<div class="carousel-inner">
+<div class="carousel-item active">
+<img alt="Faculty Traffic Single Page" class="d-block w-100" src="Images/FacultyRoster/FacultyRosterWebLayout.png"/>
+</div>
+</div>
+<button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#carouselExampleCaptions" type="button">
+<span aria-hidden="true" class="carousel-control-prev-icon"></span>
+<span class="visually-hidden">Previous</span>
+</button>
+<button class="carousel-control-next" data-bs-slide="next" data-bs-target="#carouselExampleCaptions" type="button">
+<span aria-hidden="true" class="carousel-control-next-icon"></span>
+<span class="visually-hidden">Next</span>
+</button>
+</div>
+</div><div class="project-detail-wrapper container">
+<section class="section-spacing portfolio-card-section material-tone-neutral">
+<!-- Project overview -->
+<div class="container">
+<div class="row">
+<div class="col-md-3 d-none d-md-block">
+<img alt="Map icons leading to each other" src="Images/Portfolio_Shared/ProjectOverviewPointsTall.png" style="max-width: 100%;"/>
+</div>
+<div class="col-md-9 material-section-heading">
+<h2 class="head-title text-muted">Project Overview</h2>
+<p class="lead text-muted">Between November 2023 and December 2023, I led a project to create a Faculty Roster retrieval page in response to unusual performance spikes on our main platform. The goal was to provide Faculty with a way to access their instructional section rosters without disruption, even during high traffic periods.</p>
+<p class="lead text-muted">My role in this project was multifaceted, as I took on the responsibilities of Lead UX Designer, UX Researcher, UX Tester, DBA, and Developer. The result was a single-page web application that was not only user-friendly and accessible but also integrated with the backend to retrieve roster data efficiently.</p>
+<!-- Quick Details Table -->
+<div class="table-responsive mt-5">
+<table class="table table-bordered">
+<tbody>
+<tr>
+<th>Tech Stack</th>
+<td>.NET Core, SQL Server, JavaScript, Bootstrap</td>
+</tr>
+<tr>
+<th>Project Type</th>
+<td>Full-stack web app</td>
+</tr>
+<tr>
+<th>Role</th>
+<td>Lead UX Designer, UX Researcher, UX Tester, DBA, Developer</td>
+</tr>
+<tr>
+<th>Completion Date</th>
+<td>Dec 2023</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
 </section>
-
-
-
-
-
-    <!-- LoFi prototypes Mid Fi -->
-    <section class="section-spacing">
-      <div class="container">
-        <div class="row justify-content-center">
-
-          <div class="col-12" style="text-align: center;">
-            <p class="p-headline4">Prototypes</p>
-          </div>
-
-          <div class="col-12 section-information" style="text-align: center;">
-            <!-- <p>Paper Wireframes</p> -->
-            <p class="p-text">
-              Three distinct mockups were developed to test different layout possibilities. These mockups demonstrated varying ways to organize and display the enrolled, dropped, and waitlisted students while maintaining clarity and ease of use.
-
-            </p>
-
-            <p class="p-text">
-              The final prototype was selected based on feedback from stakeholders and testing, and the page was designed to meet all user requirements, including print functionality.
-            </p>
-            <!-- <img src="Images/Mentor_LowFi.png" class="project-details-image" alt="LoFi Prototypes" /> -->
-
-          </div>
-
-          <div class="col-md-12 row">
-            <div class="col-md-6 mb-4">
-              <img class="lofi-images" src="Images/FacultyRoster/FacultyRoster_Prototype1.png" alt="Mock Page 1">
-            </div>
-
-            <div class="col-md-6 mb-4">
-              <img class="lofi-images" src="Images/FacultyRoster/FacultyRoster_Prototype2.png" alt="Mock Page 2">
-            </div>
-
-            <div class="col-md-6 mb-4">
-              <img class="lofi-images" src="Images/FacultyRoster/FacultyRoster_Prototype3.png" alt="Mock Page 3">
-            </div>
-
-
-
-          </div>
-
-
-
-
-        </div>
-      </div>
-    </section>
-
-
-
-    <!-- Digital Wireframes -->
-    <!-- <section class="section-spacing">
-    <div class="container">
-      <div class="row justify-content-center">
-  
-        <div class="col-12" style="text-align: center;">
-            <p class="section-subheading">Digital Wireframes</p>
-        </div>
-        
-        <div class="col-12 section-information" style="text-align: center;">
-            <p>Hi-fidelity Mockups</p>
-            <p>
-                Adding this additional view to allow users to manage multiple mentors as well as identify if a mentor has accepted their request.      
-            </p>
-            <img src="Images/Mentor_DigitalWireframes.png" class="project-details-image" alt="Idea Icon" />
-          </div>
-    
-      </div>
-    </div>
-  </section>
- -->
-
-
-
-
-
-    <!-- Usability Study -->
-    <!-- <section class="section-spacing">
-    <div class="container">
-      <div class="row justify-content-center">
-  
-        <div class="col-12" style="text-align: center;">
-            <p class="p-headline4">Usability Study Findings</p>
-        </div>
-        
-        <div class="col-md-4 col-sm-12 section-information" style="text-align: center;">
-          <img src="Images/idea_Logo.png" alt="Idea Icon" />
-          <p class="p-headline5">Administrators</p>
-          <p class="p-text">
-            Remove processed submissions older than one year.
-          </p>
-        </div>
-  
-  
-        <div class="col-md-4 col-sm-12 section-information" style="text-align: center;">
-            <img src="Images/idea_Logo.png" alt="Idea Icon" />
-          <p class="p-headline5">Error Messages</p>
-          <p class="p-text">
-            Display api errors to Administrators
-          </p>
-        </div>
-  
-  
-        <div class="col-md-4 col-sm-12 section-information" style="text-align: center;">
-            <img src="Images/idea_Logo.png" alt="Idea Icon" />
-          <p class="p-headline5">Disable Submissions</p>
-          <p class="p-text">
-            A way to disable submissions if needed.
-          </p>
-        </div>
-  
-       
-  
-      </div>
-    </div>
-  </section> -->
-
-  <section class="section-spacing">
-    <div class="container">
-      <div class="row justify-content-center">
-  
-        <div class="col-12" style="text-align: center;">
-            <p class="p-headline4">Key Performance Indicators</p>
-            <p>
-              <img src="Images/chart.png" alt="Rocket Launch Logo" style="opacity: .5;"/>
-            </p>
-        </div>
-        
-        <div class="col-10 section-information" style="text-align: left;">
-  
-          <p class="p-text">
-            Reduction in Roster Retrieval Time: The optimized stored procedure reduced roster retrieval time by 75%, cutting it down from 4 seconds to less than 1 second.
-          <p class="p-text">
-            Improvement in Faculty Satisfaction: Post-launch surveys indicated a 40% improvement in Faculty satisfaction with the roster retrieval process, due to the ease of use and printability features.
-          <p class="p-text">
-            Decrease in Support Tickets: The implementation of the Faculty Roster page led to a 50% reduction in support tickets related to roster retrieval issues, significantly alleviating the workload on the IT support team.
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-
-
-    <!-- Hi Fi Mockups -->
-    <section class="section-spacing">
-      <div class="container">
-        <div class="row justify-content-center">
-
-          <div class="col-md-12" style="text-align: center;">
-            <p class="p-headline4">Landing Page</p>
-            <p class="p-text">This is the demo version running with test data.</p>
-          </div>
-
-          <div class="col-md-12">
-            <img class="gif-fit" src="Images/FacultyRoster/FacultyRoster_Roster.gif" alt="Demo Faculty Roster Page">
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-
-    <section class="section-spacing">
-      <div class="container">
-        <div class="row justify-content-center">
-    
-          <div class="col-12" style="text-align: center;">
-              <p class="p-headline4">Launch</p>
-              <p>
-                <img src="Images/RocketLaunch.png" alt="Rocket Launch Logo" style="opacity: .5;"/>
-              </p>
-          </div>
-          
-          <div class="col-12 section-information" style="text-align: center;">
-    
-            <p class="p-text">
-              The Faculty Roster page was successfully launched with test data and is now available to all Faculty. It ensures that Faculty can retrieve their instructional rosters without any interruption, even during times of high system load.
-           
-          </div>
-        </div>
-      </div>
-    </section>
-    
-
-
-    <!-- Take aways -->
-    <section class="section-spacing">
-      <div class="container">
-        <div class="row justify-content-center">
-
-          <div class="col-12 pb-5" style="text-align: center;">
-            <p class="section-subheading">Take Aways</p>
-            <p>
-              <img src="Images/local_library.png" alt="Rocket Launch Logo" style="opacity: .5;" />
-              <p class="p-text">
-                This project had a significant impact on the Faculty's ability to access critical information during high traffic periods, ensuring their work continued uninterrupted. The backend optimization and creation of a new stored procedure not only improved performance but also strengthened the overall system's resilience.
-              </p>
-            </p>
-          </div>
-
-          <div class="col-md-6 col-sm-12 section-information" style="text-align: center;">
-            <p class="p-headline4">
-              Impact
-            </p class="p-text">
-            <p class="p-text">
-              The Faculty Roster page had a significant and immediate impact on the daily operations of the Faculty and IT teams. By improving the speed and reliability of roster retrieval, Faculty members could continue their work without interruption during peak periods. This project not only enhanced user satisfaction but also reduced the overall load on the system, which helped to stabilize performance during critical times.
-              </p>
-              <p class="p-text">
-              The project demonstrated the importance of building robust, user-centered tools that prioritize both efficiency and accessibility. By addressing the root causes of the performance issues and optimizing the system’s backend, I was able to deliver a solution that had a lasting positive effect on our institution.
-            </p>
-          </div>
-
-          <div class="col-md-6 col-sm-12 section-information" style="text-align: center;">
-            <p class="p-headline4">
-              What I Learned
-            </p>
-            <p class="p-text">
-              I discovered that I enjoy projects involving both frontend and backend development. Optimizing database procedures and improving system performance were particularly rewarding aspects of this project. Additionally, collaborating with DBAs allowed me to further hone my backend skills and learn new optimization techniques.</p>
-
-          </div>
-        </div>
-      </div>
-    </section>
-
-
-
-
-    <!-- back to more work -->
-    <section class="section-spacing">
-      <div class="container">
-        <div class="row justify-content-center">
-
-          <a href="Portfolio.html" alt="More work">
-            <button class="home-contact-button" type="button">More Work</button>
-          </a>
-        </div>
-      </div>
-    </section>
-
-  </div>
-
-	<section id="ContactMe" class="home-contact">
-		<div class="container">
-			<div class="row justify-content-center">
-				<div class="col-md-6 col-sm-12 text-center">
-					<label class="section-heading home-contact-header">Contact</label>
-					<p class="section-information home-contact-message">Have a question or want to work together?</p>
-					<a href="Contact.html" alt="Send me a message">
-						<button class="home-contact-button" type="button">Reach Out</button>
-					</a>
-
-					<a href="https://www.linkedin.com/in/ramiro-puentes-fullstack-developer/" target="_blank">
-						<button class="btn btn-link text-white linkedinButtonCTA" type="button ">
-							<img src="Images/LinkedinLogo_sm.png" alt="Linkedin Logo" class="img-linkedin-sm" />
-							View LinkedIn
-						</button>
-					</a>
-				</div>
-			</div>
-		</div>
-	</section>
-
-
-
+<section class="section-spacing portfolio-card-section material-tone-solution">
+<!-- Key Features -->
+<div class="container">
+<div class="row">
+<div class="col-md-2 d-none d-md-block card-header-w-icon">
+<img alt="Lightbulb" src="Images/Portfolio_Shared/RequirementsLogo.png" style="max-width: 100%;"/>
+<h2 class="head-title text-muted">Key Features</h2>
+</div>
+<div class="col-md-10 col-sm-12 material-section-heading">
+<ul class="ul-checks">
+<li><strong>Ease of Use:</strong>
+<span>The page needed to be intuitive and straightforward.</span>
+</li>
+<li><strong>Accessibility:</strong>
+<span>It was essential for the page to be fully accessible, following WCAG standards.</span>
+</li>
+<li><strong>Printability:</strong>
+<span>Faculty needed the option to print their rosters easily.</span>
+</li>
+<li><strong>Comprehensive Display:</strong>
+<span>The page needed to show enrolled, dropped, and waitlisted students clearly and concisely.</span>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<section class="section-spacing portfolio-card-section material-tone-solution">
+<!-- Screenshot or GIF -->
+<div class="container">
+<div class="row">
+<div class="col-md-3 d-none d-md-block card-header-w-icon">
+<img alt="Lightbulb" src="Images/Portfolio_Shared/GalleryLogo_Tall2.png" style="max-width: 100%;"/>
+<h2 class="head-title text-muted">Project Gallery</h2>
+</div>
+<div class="col-md-9 material-section-heading">
+<img alt="Faculty Roster single page" class="img-fluid my-3" src="Images/FacultyRoster/FacultyRosterWebLayout.png"/>
+<hr/>
+<div class="mobile-image-group">
+<img alt="Faculty Roster prototype layout 1" class="img-fluid my-3" src="Images/FacultyRoster/FacultyRoster_Prototype1.png"/>
+<img alt="Faculty Roster prototype layout 2" class="img-fluid my-3" src="Images/FacultyRoster/FacultyRoster_Prototype2.png"/>
+<img alt="Faculty Roster prototype layout 3" class="img-fluid my-3" src="Images/FacultyRoster/FacultyRoster_Prototype3.png"/>
+</div>
+<hr/>
+<img alt="Faculty Roster demo — this is the demo version running with test data" class="img-fluid my-3" src="Images/FacultyRoster/FacultyRoster_Roster.gif"/>
+</div>
+</div>
+</div>
+</section>
+<section class="section-spacing portfolio-card-section material-tone-solution">
+<!-- Design & Development Insights -->
+<div class="container">
+<div class="row">
+<div class="col-md-2 d-none d-md-block card-header-w-icon">
+<img alt="Lightbulb" src="Images/Portfolio_Shared/IdeaLogo_purple.png" style="max-width: 100%;"/>
+<h2>Design and Development Insights</h2>
+</div>
+<div class="col-md-10 material-section-heading">
+<p class="mw-100 p-2r">As UX designer, researcher, DBA, and developer, I owned this project from research through backend optimization.</p>
+<div class="insight">
+<h3>User Research</h3>
+<p>To ensure the new Faculty Roster page met user needs, I conducted extensive user research by examining the existing roster displays in our Student software. This helped me understand what Faculty were accustomed to seeing. Additionally, I researched best practices and alternative roster layouts online to guide my design process.</p><p>The following core requirements were identified during the research phase:</p><ul><li>Ease of Use: The page needed to be intuitive and straightforward</li><li>Accessibility: It was essential for the page to be fully accessible, following WCAG standards</li><li>Printability: Faculty needed the option to print their rosters easily</li><li>Comprehensive Display: The page needed to show enrolled, dropped, and waitlisted students clearly and concisely</li></ul><p>These requirements guided the design and development of the prototypes and final product.</p><div class="mobile-image-group"><img alt="Education software roster inspiration" class="img-fluid my-3" src="Images/FacultyRoster/FacultyRoster_Research1.png"/><img alt="Sample roster layout 1" class="img-fluid my-3" src="Images/FacultyRoster/FacultyRoster_Research2.png"/><img alt="Sample roster layout 2" class="img-fluid my-3" src="Images/FacultyRoster/FacultyRoster_Research3.png"/></div><p style="text-align:center;font-size:.85rem;color:var(--muted);margin-top:6px;">Left to right: education software inspiration, sample roster 1, sample roster 2</p>
+</div>
+<div class="insight">
+<h3>Design and Development Process</h3>
+<p>With a clear understanding of user needs, I began designing several prototype layouts for the Faculty Roster page. Each mockup was aimed at providing a clean, accessible, and easily navigable interface that could be quickly understood by Faculty members.</p><p>The development process involved not only front-end work but also back-end optimization. I created a new stored procedure to handle the retrieval of roster data from multiple tables and optimized an existing stored procedure's performance from 4 seconds to under 1 second. Collaborating closely with the DBAs, I ensured that the backend was robust and scalable, even during peak usage times.</p>
+</div>
+<div class="insight">
+<h3>Prototypes</h3>
+<p>Three distinct mockups were developed to test different layout possibilities. These mockups demonstrated varying ways to organize and display the enrolled, dropped, and waitlisted students while maintaining clarity and ease of use.</p><p>The final prototype was selected based on feedback from stakeholders and testing, and the page was designed to meet all user requirements, including print functionality.</p>
+</div>
+<div class="insight">
+<h3>Key Performance Indicators</h3>
+<ul><li><strong>75% reduction</strong> in Roster Retrieval Time: The optimized stored procedure reduced roster retrieval time by 75%, cutting it down from 4 seconds to less than 1 second.</li><li><strong>40% improvement</strong> in Faculty Satisfaction: Post-launch surveys indicated a 40% improvement in Faculty satisfaction with the roster retrieval process, due to the ease of use and printability features.</li><li><strong>50% decrease</strong> in Support Tickets: The implementation of the Faculty Roster page led to a 50% reduction in support tickets related to roster retrieval issues, significantly alleviating the workload on the IT support team.</li></ul>
+</div>
+<div class="insight">
+<h3>Launch</h3>
+<p>The Faculty Roster page was successfully launched with test data and is now available to all Faculty. It ensures that Faculty can retrieve their instructional rosters without any interruption, even during times of high system load.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="section-spacing portfolio-card-section material-tone-success">
+<!-- Lessons Learned & Future Improvements -->
+<div class="container">
+<div class="row">
+<div class="col-md-2 d-none d-md-block card-header-w-icon">
+<img alt="Lightbulb" src="Images/Portfolio_Shared/CheckLogo_300.png" style="max-width: 100%;"/>
+<h2 class="head-title text-muted">Lessons Learned &amp; Future Improvements</h2>
+</div>
+<div class="col-md-10 material-section-heading">
+<div class="lesson">
+<h3>Impact</h3>
+<p>This project had a significant impact on the Faculty's ability to access critical information during high traffic periods, ensuring their work continued uninterrupted. The backend optimization and creation of a new stored procedure not only improved performance but also strengthened the overall system's resilience.</p><p>The Faculty Roster page had a significant and immediate impact on the daily operations of the Faculty and IT teams. By improving the speed and reliability of roster retrieval, Faculty members could continue their work without interruption during peak periods. This project not only enhanced user satisfaction but also reduced the overall load on the system, which helped to stabilize performance during critical times.</p><p>The project demonstrated the importance of building robust, user-centered tools that prioritize both efficiency and accessibility. By addressing the root causes of the performance issues and optimizing the system’s backend, I was able to deliver a solution that had a lasting positive effect on our institution.</p>
+</div>
+<div class="lesson">
+<h3>What I Learned</h3>
+<p>I discovered that I enjoy projects involving both frontend and backend development. Optimizing database procedures and improving system performance were particularly rewarding aspects of this project. Additionally, collaborating with DBAs allowed me to further hone my backend skills and learn new optimization techniques.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- back to more work -->
+</div><section class="section shell callout project-cta">
+<div>
+<p class="eyebrow">EXPLORE MORE</p>
+<h2>Continue through the portfolio.</h2>
+<p>Browse the complete project collection, or reach out if you would like to discuss the engineering and design decisions behind this work.</p>
+</div>
+<div class="cta-row">
+<a class="button primary" href="Portfolio.html">More projects</a>
+<a class="button secondary" href="Contact.html">Contact me</a>
+</div>
+</section></main><footer class="site-footer">
+<div class="shell footer-grid">
+<div><strong>Ramiro Puentes</strong><p>Software engineering, systems integration, and accessible digital experiences.</p></div>
+<div class="footer-links">
+<a href="Portfolio.html">Portfolio</a><a href="About.html">About</a><a href="Contact.html">Contact</a>
+<a href="https://www.linkedin.com/in/ramiro-puentes-fullstack-developer/" rel="noopener noreferrer" target="_blank">LinkedIn ↗</a>
+</div>
+</div>
+</footer>
 </body>
-
 </html>

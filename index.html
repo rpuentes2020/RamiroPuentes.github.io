@@ -1,666 +1,152 @@
 <!DOCTYPE html>
+
 <html lang="en">
-
 <head>
-
-	<!-- Google tag (gtag.js) -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-R98FW7WCJ7"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag() { dataLayer.push(arguments); }
-		gtag('js', new Date());
-
-		gtag('config', 'G-R98FW7WCJ7');
-	</script>
-
-	<meta charset="UTF-8">
-	<meta content="IE=edge" http-equiv="X-UA-Compatible">
-	<meta content="width=device-width, initial-scale=1.0" name="viewport">
-	<meta content="Ramiro Puentes portfolio website, displays my skills and projects completed." name="description">
-	<link href="Images/mandalorian_d.ico" media="(prefers-color-scheme: light)" rel="icon">
-	<link href="Images/mandalorian_w.ico" media="(prefers-color-scheme: dark)" rel="icon"><!--This is the way-->
-	<title>Ramiro Puentes</title>
-	<script src="./js/bootstrap.bundle.min.js">	</script>
-	<script src="./js/splide.js"></script>
-	<!-- <script src="./js/splide-extension-auto-scroll.min.js"></script> -->
-	<script src="./js/index.js"></script>
-	<link href="./css/bootstrap.min.css" rel="stylesheet">
-	<link href="./css/splide.min.css" rel="stylesheet">
-	<link href="./css/Style.css" rel="stylesheet">
-</head>
-
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="Portfolio of Ramiro Puentes, a software engineer focused on .NET, C#, systems integration, secure web applications, accessibility, and AI-enabled solutions." name="description"/>
+<meta content="#f4f8fc" name="theme-color"/>
+<meta content="Ramiro Puentes | Software Engineer &amp; Systems Integration" property="og:title"/>
+<meta content="Portfolio of Ramiro Puentes, a software engineer focused on .NET, C#, systems integration, secure web applications, accessibility, and AI-enabled solutions." property="og:description"/>
+<meta content="website" property="og:type"/>
+<link href="Images/mandalorian_w.ico" rel="icon"/>
+<title>Ramiro Puentes | Software Engineer &amp; Systems Integration</title>
+<link href="css/portfolio-v2.css" rel="stylesheet"/>
+<script defer="" src="js/portfolio-v2.js"></script>
+<link href="css/material-polish.css" rel="stylesheet"/></head>
 <body>
-	<nav class="navbar navbar-expand-lg bg-body-tertiary">
-		<div class="container-fluid">
-			<a class="navbar-brand" href="index.html"><img alt="RP Initials logo" src="Images/InitialsLogo.png"></a>
-			<button aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"
-				class="navbar-toggler" data-bs-target="#navbarNav" data-bs-toggle="collapse" type="button"><span
-					class="navbar-toggler-icon"></span></button>
-			<div class="collapse navbar-collapse nav-style" id="navbarNav">
-				<ul class="navbar-nav">
-					<li class="nav-item">
-						<a class="nav-link active" href="index.html">Home</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="Portfolio.html">Portfolio</a>
-					</li>
-					<li class="nav-item">					
-						<a class="nav-link" href="Contact.html">Contact</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="About.html">About</a>
-					</li>
-				</ul>
-			</div>
-		</div>
-	</nav>
-	<section>
-		<div class="hero-rp">
-			<div class="video-section">
-				<div class="video-overlay"></div><video autoplay="" muted="" class="video-hero" height="500" loop=""
-					width="1920">
-					<source src="./Images/video-hero-bg-c.mp4" type="video/mp4"> Your browser does not support the video
-					tag.
-				</video>
-			</div>
-			<div class="hero-greeting">
-				<span class="hello-emphasis">Hello, world!</span>
-				<h2>I'm <span class="name-emphasis">Ramiro Puentes</span></h2><span>a Full-stack Web Developer</span>
-				<ul class="list-group list-group-horizontal hero-social-list">
-					<li class="list-group-item hero-social-list-item">
-						<a href="https://www.linkedin.com/in/ramiro-puentes-fullstack-Developer" target="_blank"><img
-								alt="LinkedIn Logo" src="./Images/linkedinLogo_white.png"></a>
-					</li>
-					<li class="list-group-item hero-social-list-item">
-						<a href="https://dribbble.com/Ramp2010" target="_blank"><img alt="Dribbble Logo"
-								src="./Images/dribble_white.png"></a>
-					</li>
-					<li class="list-group-item hero-social-list-item">
-						<a href="https://codepen.io/rpuentes" target="_blank"><img alt="CodePen Logo"
-								src="./Images/codePen.png"></a>
-					</li>
-				</ul>
-			</div>
-		</div>
-	</section>
-	<section class="section-spacing home-intro">
-		<div class="container">
-			<div class="row justify-content-center">
-				<div class="col-md-3 welcome-image-wrapper"><img alt="Character waving hello" class="welcome-img"
-						src="./Images/Hello.png"></div>
-				<div class="col-md-9 col-sm-12">
-					<p class="p-headline5 welcome-message"><span class="p-headline1 p-gray">Welcome</span> to my online
-						portfolio, where I've condensed a decade of programming expertise into a dynamic showcase. I'm a
-						passionate and dedicated developer, specializing in full-stack development to create elegant
-						solutions for web and mobile applications. Collaboration and continuous learning are vital to my
-						approach, and I believe in contributing positively to the developer community. Explore my
-						projects that showcase creativity, attention to detail, and a drive for excellence. I’m always
-						eager to connect with fellow developers, tech enthusiasts, and potential collaborators. Thank
-						you for visiting, and let’s shape the future together, one line of code at a time!</p>
-				</div>
-			</div>
-		</div>
-	</section>
-	<section class="home-portfolio section-spacing">
-		<div class="container">
-
-
-
-			<div class="row justify-content-center pb-5">
-				<div class="col-12">
-					<div class="col-3">
-						<p class="p-headline1 p-gray">Portfolio</p>
-					</div>
-				</div>
-				<div class="col-12">
-					<p class="p-text">Below, you'll find highlighted examples from this portfolio, representing just a
-						subset of my diverse collection of professional and creative projects. These examples showcase
-						my passion for innovation and commitment to excellence.
-						Explore the exciting stories behind each project,
-						inviting you to witness my dedication to making a positive impact.</p>
-				</div>
-
-				<div class="TestCarousel">
-					<div class="example-module--example-content--1aX8- example-module--example-content-has-tab--idWc-">
-						<div id="autoplay-slider"
-							class="example-module--example-slider--PcwLi example-module--example-slider-active---eMS5"
-							role="tabpanel" aria-hidden="false" aria-label="Carousel preview">
-							<div id="autoplay-wrapper" class="splide-wrapper site">
-								<div>
-									<div id="autoplay"
-										class="splide splide--loop splide--ltr splide--draggable is-active is-rendered is-overflow is-initialized"
-										aria-labelledby="autoplay-heading" role="region" aria-roledescription="carousel"
-										style="height:410px;">
-										<div class="splide__arrows splide__arrows--ltr"><button
-												class="splide__arrow splide__arrow--prev" type="button"
-												aria-label="Previous slide" aria-controls="autoplay-track"><svg
-													xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" width="40"
-													height="40">
-													<path d="m13.5 7.01 13 13m-13 13 13-13"></path>
-												</svg></button><button class="splide__arrow splide__arrow--next"
-												type="button" aria-label="Go to first slide"
-												aria-controls="autoplay-track"><svg xmlns="http://www.w3.org/2000/svg"
-													viewBox="0 0 40 40" width="40" height="40">
-													<path d="m13.5 7.01 13 13m-13 13 13-13"></path>
-												</svg></button></div>
-										<div class="splide__track splide__track--loop splide__track--ltr splide__track--draggable"
-											id="autoplay-track" style="padding-left: 0px; padding-right: 0px;"
-											aria-live="off" aria-atomic="true" aria-busy="false">
-											<ul class="splide__list carousel-splide-list" id="autoplay-list"
-												role="presentation">
-												<li class="splide__slide carousel-splide-list-item"
-													id="autoplay-slide16" role="tabpanel" aria-roledescription="slide"
-													aria-label="1 of 16" aria-hidden="true">
-													<div class="mc-card">
-														<a href="ProjectDetails_StudentMFA.html">
-															<div class="mc-img"><img alt="Student Multi-Factor Authentication"
-																	class="card-img-top"
-																	src="./Images/StudentMFA/StudentMFA_ProjectCard.png">
-															</div>
-															<div class="mc-con">
-																<p class="project-title">Student Multifactor Authentication</p>
-																<p class="p-card-subheading5">Created a web app to allow
-																	Students the ability to volentarily opt into Multifactor Authentication
-																	before a Policy makes it mandatory.</p>
-															</div>
-														</a>
-													</div>
-												</li>
-												<li class="splide__slide carousel-splide-list-item"
-													id="autoplay-slide01" role="tabpanel" aria-roledescription="slide"
-													aria-label="1 of 15" aria-hidden="true">
-													<div class="mc-card">
-														<a href="ProjectDetails_OrientationDashboard.html">
-															<div class="mc-img"><img alt="Orientation Admin Dashboard"
-																	class="card-img-top"
-																	src="./Images/OrientationDashboard/OrientationDashboard_ProjectCard.png">
-															</div>
-															<div class="mc-con">
-																<p class="project-title">Orientation Admin Dashboard</p>
-																<p class="p-card-subheading5">Created an admin dashboard
-																	for IT staff to manage and update orientation quiz
-																	content efficiently.</p>
-															</div>
-														</a>
-													</div>
-												</li>
-												<li class="splide__slide carousel-splide-list-item"
-													id="autoplay-slide02" role="tabpanel" aria-roledescription="slide"
-													aria-label="2 of 15" aria-hidden="true">
-													<div class="mc-card">
-														<a href="ProjectDetails_Orientation.html">
-															<div class="mc-img">
-																<img alt="New Student Orientation" class="card-img-top"
-																	src="./Images/Orientation/Project_card_Orientation.png">
-															</div>
-															<div class="mc-con">
-																<h3 class="project-title">New Student Orientation</h3>
-																<!-- Project Title -->
-																<p class="p-card-subheading5">Developed a student
-																	orientation web application, providing an
-																	interactive and accessible onboarding experience.
-																</p> <!-- Role moved to subtitle -->
-															</div>
-														</a>
-													</div>
-												</li>
-
-												<li class="splide__slide carousel-splide-list-item"
-													id="autoplay-slide03" role="tabpanel" aria-roledescription="slide"
-													aria-label="3 of 15" aria-hidden="true">
-													<div class="mc-card">
-														<a href="ProjectDetails_ChromeExtension.html">
-															<div class="mc-img"><img
-																	alt="Personal Project Chrome Web Accessibility"
-																	class="card-img-top"
-																	src="./Images/Project_card_ChromeExtension.png">
-															</div>
-															<div class="mc-con">
-																<p class="project-title">Chrome Extension</p>
-																<p class="p-card-subheading5">A custom Chrome extension
-																	enhancing browser functionality for improved
-																	accessibility.</p>
-															</div>
-														</a>
-													</div>
-												</li>
-												<li class="splide__slide carousel-splide-list-item"
-												id="autoplay-slide03" role="tabpanel" aria-roledescription="slide"
-												aria-label="3 of 15" aria-hidden="true">
-												<div class="mc-card">
-													<a href="ProjectDetails_TitleIX.html">
-														<div class="mc-img"><img
-																alt="Title IX website"
-																class="card-img-top"
-																src="./Images/TitleIX/TitleIX_ProjectCard.png">
-														</div>
-														<div class="mc-con">
-															<p class="project-title">Title IX</p>
-															<p class="p-card-subheading5">Created a simple compliance system that tracks user confirmation of required training videos.
-															</p>
-														</div>
-													</a>
-												</div>
-											</li>
-
-												<li class="splide__slide carousel-splide-list-item"
-													id="autoplay-slide04" role="tabpanel" aria-roledescription="slide"
-													aria-label="4 of 15" aria-hidden="true">
-													<div class="mc-card">
-														<a href="ProjectDetails_ChosenName.html">
-															<div class="mc-img"><img
-																	alt="Screen shot of an app designed to allow staff to chose their preferred name"
-																	class="card-img-top"
-																	src="./Images/Project_card_PreferredName.png">
-															</div>
-															<div class="mc-con">
-																<p class="project-title">Preferred Name</p>
-																<p class="p-card-subheading5">Developed an inclusive
-																	platform for staff to update preferred names and
-																	pronouns.</p>
-															</div>
-														</a>
-													</div>
-												</li>
-												<li class="splide__slide carousel-splide-list-item"
-													id="autoplay-slide05" role="tabpanel" aria-roledescription="slide"
-													aria-label="5 of 15" aria-hidden="true">
-													<div class="mc-card">
-														<a href="ProjectDetails_FacultyRoster.html">
-															<div class="mc-img"><img
-																	alt="App that display roster of class for Faculty"
-																	class="card-img-top"
-																	src="./Images/FacultyRoster/Project_card_FacultyRoster.png">
-															</div>
-															<div class="mc-con">
-																<p class="project-title">Faculty Roster</p>
-																<p class="p-card-subheading5">Built a web app for
-																	faculty to efficiently access and manage student
-																	rosters.</p>
-															</div>
-														</a>
-													</div>
-												</li>
-												<li class="splide__slide carousel-splide-list-item"
-													id="autoplay-slide06" role="tabpanel" aria-roledescription="slide"
-													aria-label="6 of 15" aria-hidden="true">
-													<div class="mc-card">
-														<a href="ProjectDetails_CovidSubmissions.html">
-															<div class="mc-img"><img
-																	alt="App that allows staff to submit their Covid vaccinations to HR"
-																	class="card-img-top"
-																	src="./Images/Project_card_Covid.png"></div>
-															<div class="mc-con">
-																<p class="project-title">Covid Vaccine Submissions</p>
-																<p class="p-card-subheading5">Created a secure HR app
-																	for tracking staff vaccination compliance.</p>
-															</div>
-														</a>
-													</div>
-
-												</li>
-												<li class="splide__slide carousel-splide-list-item"
-													id="autoplay-slide07" role="tabpanel" aria-roledescription="slide"
-													aria-label="7 of 15" aria-hidden="true">
-													<div class="mc-card">
-														<a href="ProjectDetails_FacultyTraffic.html">
-															<div class="mc-img"><img
-																	alt="App the reminds staff of busy system times"
-																	class="card-img-top"
-																	src="./Images/FacultyTraffic/Project_card_FacultyTraffic.png">
-															</div>
-															<div class="mc-con">
-																<p class="project-title">Faculty Traffic</p>
-																<p class="p-card-subheading5">Designed a landing page to
-																	optimize faculty system access and performance.</p>
-															</div>
-														</a>
-													</div>
-												</li>
-												<li class="splide__slide carousel-splide-list-item"
-													id="autoplay-slide08" role="tabpanel" aria-roledescription="slide"
-													aria-label="8 of 15" aria-hidden="true">
-													<div class="mc-card">
-														<a href="ProjectDetails_Refco.html">
-															<div class="mc-img"><img
-																	alt="Fresno County Retired Employees Website"
-																	class="card-img-top"
-																	src="./Images/Project_card_Refco.png"></div>
-															<div class="mc-con">
-																<p class="project-title">REFCO</p>
-																<p class="p-card-subheading5">(Freelance) Modernized
-																	REFCO’s website for better engagement and usability.
-																</p>
-															</div>
-														</a>
-													</div>
-												</li>
-												<li class="splide__slide carousel-splide-list-item"
-													id="autoplay-slide09" role="tabpanel" aria-roledescription="slide"
-													aria-label="9 of 15" aria-hidden="true">
-													<div class="mc-card">
-														<a href="ProjectDetails_Snackbar.html">
-															<div class="mc-img"><img
-																	alt="Concept of a website for a Snackbar at a theme park"
-																	class="card-img-top"
-																	src="./Images/Project_card_Snackbar.png"></div>
-															<div class="mc-con">
-																<p class="project-title">Snackbar Concept</p>
-																<p class="p-card-subheading5">Designed a streamlined
-																	snackbar ordering system for amusement parks.</p>
-															</div>
-														</a>
-													</div>
-												</li>
-												<li class="splide__slide carousel-splide-list-item"
-													id="autoplay-slide09" role="tabpanel" aria-roledescription="slide"
-													aria-label="9 of 15" aria-hidden="true">
-													<div class="mc-card">
-														<a href="ProjectDetails_Mentor.html">
-															<div class="mc-img"><img
-																	alt="Concept of a website for a Mentor website"
-																	class="card-img-top"
-																	src="./Images/Project_card_Mentor.png"></div>
-															<div class="mc-con">
-																<p class="project-title">Mentor Concept Site</p>
-																<p class="p-card-subheading5">Prototyped a mentorship
-																	platform to enhance mentor-mentee connections.</p>
-															</div>
-														</a>
-													</div>
-												</li>
-												<li class="splide__slide carousel-splide-list-item"
-													id="autoplay-slide10" role="tabpanel" ria-roledescription="slide"
-													aria-label="10 of 15" aria-hidden="true">
-													<div class="mc-card">
-														<a href="ProjectDetails_StaffDirectory.html">
-															<div class="mc-img"><img
-																	alt="App that allows easy look up of Active Directory Staff"
-																	class="card-img-top"
-																	src="./Images/Project_card_Directory.png">
-															</div>
-															<div class="mc-con">
-																<p class="project-title">Staff Directory</p>
-																<p class="p-card-subheading5">Developed an efficient
-																	staff directory for quick access to employee data
-																</p>
-															</div>
-														</a>
-													</div>
-
-												</li>
-												<li class="splide__slide carousel-splide-list-item"
-													id="autoplay-slide11" role="tabpanel" aria-roledescription="slide"
-													aria-label="11 of 15" aria-hidden="true">
-													<div class="mc-card">
-														<a href="ProjectDetails_FresnoCMS.html">
-															<div class="mc-img"><img alt="Fresno County CMS Migration"
-																	class="card-img-top"
-																	src="./Images/Project_card_FresnoCMS_2.png">
-															</div>
-															<div class="mc-con">
-																<p class="project-title">CMS Migration</p>
-																<p class="p-card-subheading5">Led the migration of
-																	Fresno County’s website to a modern CMS.</p>
-															</div>
-														</a>
-													</div>
-												</li>
-												<li class="splide__slide carousel-splide-list-item"
-													id="autoplay-slide12" role="tabpanel" aria-roledescription="slide"
-													aria-label="12 of 15" aria-hidden="true">
-													<div class="mc-card">
-														<a href="ProjectDetails_Parking.html">
-															<div class="mc-img"><img
-																	alt="Fresno County Parking Application"
-																	class="card-img-top"
-																	src="./Images/Project_card_Parking2.png"></div>
-															<div class="mc-con">
-																<p class="project-title">Parking Application</p>
-																<p class="p-card-subheading5">Developed a parking
-																	management app to improve permit tracking.</p>
-															</div>
-														</a>
-													</div>
-												</li>
-												<li class="splide__slide carousel-splide-list-item"
-													id="autoplay-slide13" role="tabpanel" aria-roledescription="slide"
-													aria-label="13 of 15" aria-hidden="true">
-													<div class="mc-card">
-														<a href="ProjectDetails_Wifi.html">
-															<div class="mc-img"><img alt="Fresno County Confernce Wifi"
-																	class="card-img-top"
-																	src="./Images/Project_card_Wifi.png"></div>
-															<div class="mc-con">
-																<p class="project-title">Wifi Access</p>
-																<p class="p-card-subheading5">Redesigned the guest Wi-Fi
-																	login page for improved accessibility.</p>
-															</div>
-														</a>
-													</div>
-												</li>
-												<li class="splide__slide carousel-splide-list-item"
-													id="autoplay-slide14" role="tabpanel" aria-roledescription="slide"
-													aria-label="14 of 15" aria-hidden="true">
-													<div class="mc-card">
-														<a href="ProjectDetails_PublicHealth.html">
-															<div class="mc-img"><img
-																	alt="Fresno County Health Inspections App"
-																	class="card-img-top"
-																	src="./Images/Project_card_PublicHealth2.png">
-															</div>
-															<div class="mc-con">
-																<p class="project-title">Health Inspections</p>
-																<p class="p-card-subheading5">Built an online help site
-																	for staff transitioning to a new phone system.</p>
-															</div>
-														</a>
-													</div>
-												</li>
-											</ul>
-										</div>
-
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-
-
-
-			</div>
-			<div class="col-md-12">
-				<a href="Portfolio.html"><button class="cta-btn-sm cta-bg">Explore more of my projects</button></a>
-			</div>
-		</div>
-		</div>
-	</section>
-	<div class="home-image-banner section-spacing">
-		<div></div>
-	</div>
-	<section class="home-skills section-spacing">
-		<div class="container">
-			<div class="row justify-content-center">
-				<div class="col-12">
-					<div class="col-3">
-						<p class="p-headline1 p-gray">Skills</p>
-					</div>
-				</div>
-				<div class="col-12">
-					<p class="p-text">As a versatile developer, I excel in various programming languages, frameworks,
-						and both front-end and back-end development. With a passion for crafting innovative solutions,
-						I'm eager to explore new possibilities and push the boundaries of technology.</p>
-				</div>
-				<div class="col-12 mt-3">
-					<div class="home-skill-book">
-						.Net Core
-					</div>
-					<div class="home-skill-book">
-						.Net Framework
-					</div>
-					<div class="home-skill-book">
-						Adobe CC
-					</div>
-					<div class="home-skill-book">
-						Angular
-					</div>
-					<div class="home-skill-book">
-						Atom
-					</div>
-					<div class="home-skill-book">
-						Azure
-					</div>
-					<div class="home-skill-book">
-						BitBucket
-					</div>
-					<div class="home-skill-book">
-						Brackets
-					</div>
-					<div class="home-skill-book">
-						C#
-					</div>
-					<div class="home-skill-book">
-						CSS
-					</div>
-					<div class="home-skill-book">
-						Docker
-					</div>
-					<div class="home-skill-book">
-						Github
-					</div>
-					<div class="home-skill-book">
-						Html
-					</div>
-					<div class="home-skill-book">
-						Illustrator
-					</div>
-					<div class="home-skill-book">
-						Javascript
-					</div>
-					<div class="home-skill-book">
-						Jquery
-					</div>
-					<div class="home-skill-book">
-						KnockoutJs
-					</div>
-					<div class="home-skill-book">
-						Lightroom
-					</div>
-					<div class="home-skill-book">
-						MSSql
-					</div>
-					<div class="home-skill-book">
-						MySql
-					</div>
-					<div class="home-skill-book">
-						Oracle
-					</div>
-					<div class="home-skill-book">
-						Photoshop
-					</div>
-					<div class="home-skill-book">
-						Python
-					</div>
-					<div class="home-skill-book">
-						Pytorch
-					</div>
-					<div class="home-skill-book">
-						Sketch
-					</div>
-					<div class="home-skill-book">
-						UX/UI
-					</div>
-					<div class="home-skill-book">
-						Visual Basic
-					</div>
-					<div class="home-skill-book">
-						Visual Studio
-					</div>
-					<div class="home-skill-book">
-						Vue JS
-					</div>
-					<div class="home-skill-book">
-						Wordpress
-					</div>
-					<div class="home-skill-book">
-						XD
-					</div>
-					<div class="home-skill-book">
-						to be continued..
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<section class="home-recent-achievements section-spacing">
-		<div class="container">
-			<div class="row justify-content-center">
-				<div class="col-12">
-					<div class="col-6">
-						<p class="p-headline1 p-gray">Recent Achievements</p>
-					</div>
-				</div>
-				<div class="col-12 mb-3">
-					<p class="p-text">Delighted to share my recent achievements! I've excelled in tackling complex
-						projects, receiving recognition for innovative solutions. Successfully collaborating with
-						diverse teams, I've contributed to significant milestones. Eager to leverage these
-						accomplishments to drive future success. Let's explore how my achievements can elevate your
-						endeavors.</p>
-				</div>
-				<div class="col-md-3 col-sm-6" style="text-align: center;">
-					<a href="https://coursera.org/share/7fe8ffece3a5f2bfcbc378bb5a79e24e" target="_blank"
-						title="Developing Applications on AWS">
-						<img alt="Coursera Developing Applications on AWS Badge" class="card-img-top ra-image"
-							src="./Images/DevAwsCourseraSpecialization.png" style="border-bottom:none;"
-							title="Developing Applications on AWS"></a>
-				</div>
-				<div class="col-md-3 col-sm-6" style="text-align: center;">
-					<a href="https://coursera.org/share/028856a97f2a74554aa6e8d29f488453" target="_blank"
-						title="Deep Learning Spcialization AI Tensor Flow"><img alt="Deep Learning"
-							class="card-img-top ra-image" src="./Images/achievement_DeepLearning.png"
-							style="border-bottom:none;" title="Deep learning AI Badge"></a>
-				</div>
-				<div class="col-md-3 col-sm-6">
-					<a href="https://www.google.com/url?q=https%3A%2F%2Fcoursera.org%2Fshare%2F7bee40c6e7618a9f9fefa2032bfc2273&sa=D&sntz=1&usg=AOvVaw3c_O6jo8PudUlnISnDbvqZ"
-						target="_blank" title="Google Ux Design Certificate"><img alt="Google UX UI"
-							class="card-img-top ra-image" src="./Images/achievement_GoogleUx.png"
-							style="border-bottom:none;"></a>
-				</div>
-				<div class="col-md-3 col-sm-6">
-					<a href="https://www.google.com/url?q=https%3A%2F%2Fcertificate.algoexpert.io%2FAE-d62dadabb6&sa=D&sntz=1&usg=AOvVaw2Yge--CpWLAp15_rioR18n"
-						target="_blank" title="Algo Expert Certificate"><img alt="Algo Expert"
-							class="card-img-top ra-image" src="./Images/achievement_Algorithms.png"
-							style="border-bottom:none;"></a>
-				</div>
-
-			</div>
-		</div>
-	</section>
-
-
-	<section id="ContactMe" class="home-contact">
-		<div class="container">
-			<div class="row justify-content-center">
-				<div class="col-md-6 col-sm-12 text-center">
-					<label class="section-heading home-contact-header">Contact</label>
-					<p class="section-information home-contact-message">Have a question or want to work together?</p>
-					<a href="Contact.html" alt="Send me a message">
-						<button class="home-contact-button" type="button">Reach Out</button>
-					</a>
-
-					<a href="https://www.linkedin.com/in/ramiro-puentes-fullstack-developer/" target="_blank">
-						<button class="btn btn-link text-white linkedinButtonCTA" type="button ">
-							<img src="Images/LinkedinLogo_sm.png" alt="Linkedin Logo" class="img-linkedin-sm" />
-							View LinkedIn
-						</button>
-					</a>
-				</div>
-			</div>
-		</div>
-	</section>
-
-
-</body>
-
-</html>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+<div class="shell nav-shell">
+<a aria-label="Ramiro Puentes home" class="brand" href="index.html">
+<span class="brand-mark">RP</span><span class="brand-name">Ramiro Puentes</span>
+</a>
+<button aria-controls="site-nav" aria-expanded="false" class="nav-toggle" type="button"><span class="nav-toggle-icon" aria-hidden="true"></span><span class="nav-toggle-label">Menu</span></button>
+<nav aria-label="Primary navigation" class="site-nav" id="site-nav"><ul><li><a class="nav-link active" href="index.html">Home</a></li><li><a class="nav-link" href="Portfolio.html">Portfolio</a></li><li><a class="nav-link" href="About.html">About</a></li><li><a class="nav-link" href="Contact.html">Contact</a></li></ul></nav>
+</div>
+</header>
+<main id="main">
+<section class="hero shell">
+<div class="hero-copy">
+<p class="eyebrow">SOFTWARE ENGINEERING · SYSTEMS INTEGRATION · AI</p>
+<h1>I build secure, accessible applications that connect people, systems, and data.</h1>
+<p class="hero-lede">I’m Ramiro Puentes, a software engineer with 10+ years of experience delivering full-stack applications, enterprise integrations, and user-centered tools for higher education and public-sector teams.</p>
+<div class="cta-row">
+<a class="button primary" href="#selected-work">View selected work</a>
+<a class="button secondary" href="Portfolio.html">Explore all projects</a>
+<a class="text-link" href="https://www.linkedin.com/in/ramiro-puentes-fullstack-developer/" rel="noopener noreferrer" target="_blank">LinkedIn ↗</a>
+</div>
+<ul aria-label="Portfolio highlights" class="hero-proof">
+<li><strong>10+ years</strong><span>application development</span></li>
+<li><strong>18 projects</strong><span>documented case studies</span></li>
+<li><strong>End-to-end</strong><span>UX to production delivery</span></li>
+</ul>
+</div>
+<div aria-hidden="true" class="hero-visual">
+<div class="code-card">
+<div class="code-card-top"><span></span><span></span><span></span></div>
+<pre><code><span class="muted">// focus</span>
+public class Engineer
+{
+  Stack = ".NET / C# / SQL";
+  Integrations = "APIs + Identity";
+  Priorities = new[] {
+    "Security",
+    "Accessibility",
+    "Maintainability"
+  };
+}</code></pre>
+</div>
+</div>
+</section>
+<section class="section shell" id="selected-work">
+<div class="section-heading">
+<div><p class="eyebrow">SELECTED WORK</p><h2>Selected projects that reflect how I approach real engineering problems.</h2></div>
+<a class="text-link" href="Portfolio.html">All 18 projects →</a>
+</div>
+<div class="project-grid featured-grid">
+<article class="project-card featured">
+<a class="project-image" href="ProjectDetails_StudentMFA.html"><img alt="Student MFA project interface" loading="lazy" src="Images/StudentMFA/StudentMFA_ProjectCard.png"/></a>
+<div class="project-body"><div class="tag-row"><span>Identity &amp; Security</span><span>Higher Education</span></div><h3><a href="ProjectDetails_StudentMFA.html">Student Multifactor Authentication</a></h3><p>Designed and developed a student-facing application that supports voluntary MFA enrollment before enforcement becomes mandatory.</p><a class="text-link" href="ProjectDetails_StudentMFA.html">View case study →</a></div>
+</article>
+<article class="project-card featured">
+<a class="project-image" href="ProjectDetails_OrientationDashboard.html"><img alt="Orientation admin dashboard" loading="lazy" src="Images/OrientationDashboard/OrientationDashboard_ProjectCard.png"/></a>
+<div class="project-body"><div class="tag-row"><span>Admin Platform</span><span>Content Operations</span></div><h3><a href="ProjectDetails_OrientationDashboard.html">Orientation Admin Dashboard</a></h3><p>Built an internal dashboard that lets IT staff manage and publish orientation content without requiring code changes.</p><a class="text-link" href="ProjectDetails_OrientationDashboard.html">View case study →</a></div>
+</article>
+<article class="project-card featured">
+<a class="project-image" href="ProjectDetails_Orientation.html"><img alt="Student orientation project" loading="lazy" src="Images/Orientation/Project_card_Orientation.png"/></a>
+<div class="project-body"><div class="tag-row"><span>Student Experience</span><span>Accessibility</span></div><h3><a href="ProjectDetails_Orientation.html">Student Orientation</a></h3><p>Created an accessible, guided experience for students completing a required orientation workflow.</p><a class="text-link" href="ProjectDetails_Orientation.html">View case study →</a></div>
+</article>
+<article class="project-card featured">
+<a class="project-image" href="ProjectDetails_ChromeExtension.html"><img alt="AI accessibility Chrome extension" loading="lazy" src="Images/Project_card_ChromeExtension.png"/></a>
+<div class="project-body"><div class="tag-row"><span>AI</span><span>Accessibility</span></div><h3><a href="ProjectDetails_ChromeExtension.html">AI Accessibility Chrome Extension</a></h3><p>Explored how Gemini-assisted tooling can help users adapt web experiences to better meet accessibility needs.</p><a class="text-link" href="ProjectDetails_ChromeExtension.html">View case study →</a></div>
+</article>
+<article class="project-card featured">
+<a class="project-image" href="ProjectDetails_FacultyRoster.html"><img alt="Faculty roster application" loading="lazy" src="Images/FacultyRoster/Project_card_FacultyRoster.png"/></a>
+<div class="project-body"><div class="tag-row"><span>Enterprise App</span><span>Faculty Workflow</span></div><h3><a href="ProjectDetails_FacultyRoster.html">Faculty Roster</a></h3><p>Delivered a focused application for instructional faculty to find course and student roster information efficiently.</p><a class="text-link" href="ProjectDetails_FacultyRoster.html">View case study →</a></div>
+</article>
+<article class="project-card featured">
+<a class="project-image" href="ProjectDetails_FresnoCMS.html"><img alt="Fresno County CMS migration" loading="lazy" src="Images/Project_card_FresnoCMS.png"/></a>
+<div class="project-body"><div class="tag-row"><span>Technical Leadership</span><span>CMS Migration</span></div><h3><a href="ProjectDetails_FresnoCMS.html">Fresno County CMS Migration</a></h3><p>Supported a major public website modernization as a subject-matter expert and project lead through platform and design change.</p><a class="text-link" href="ProjectDetails_FresnoCMS.html">View case study →</a></div>
+</article>
+</div>
+</section>
+<section class="section section-band">
+<div class="shell">
+<div class="section-heading compact"><div><p class="eyebrow">ENGINEERING PROFILE</p><h2>Engineering across applications, systems, and user experience.</h2></div></div>
+<div class="capability-grid">
+<article><span class="capability-number">01</span><h3>Application Engineering</h3><p>Full-stack .NET applications, C#, SQL, MVC, responsive interfaces, and production support.</p></article>
+<article><span class="capability-number">02</span><h3>Systems Integration</h3><p>APIs, identity, authentication, data workflows, third-party services, and enterprise systems.</p></article>
+<article><span class="capability-number">03</span><h3>Security &amp; Reliability</h3><p>Secure workflows, validation, MFA/identity patterns, fault-aware design, and maintainable operational tooling.</p></article>
+<article><span class="capability-number">04</span><h3>UX &amp; Accessibility</h3><p>User research, WCAG-minded design, workflow simplification, responsive UI, and iterative testing.</p></article>
+</div>
+</div>
+</section>
+<section class="section shell split-panel">
+<div>
+<p class="eyebrow">TECHNICAL FOCUS</p>
+<h2>A practical technology stack built around the problem.</h2>
+<p>My core stack centers on .NET, C#, SQL Server, web technologies, APIs, identity, and production support. I choose tools based on reliability, maintainability, security, and the needs of the people using the system.</p>
+</div>
+<div aria-label="Technical skills" class="skill-cloud">
+<span>.NET</span><span>C#</span><span>ASP.NET MVC</span><span>SQL Server</span><span>REST APIs</span><span>Authentication / SSO</span><span>JavaScript</span><span>HTML / CSS</span><span>Azure / Cloud</span><span>AI Integrations</span><span>Accessibility</span><span>Git</span><span>IIS</span><span>UX Research</span>
+</div>
+</section>
+<section class="section section-band">
+<div class="shell">
+<div class="section-heading compact"><div><p class="eyebrow">RECENT ACHIEVEMENTS</p><h2>Continued learning across engineering, AI, and design.</h2><p>I've excelled in tackling complex projects, receiving recognition for innovative solutions, and successfully collaborating with diverse teams to reach significant milestones. Here are a few of the credentials behind that work.</p></div></div>
+<div class="achievement-grid">
+<a class="achievement-card" href="https://coursera.org/share/7fe8ffece3a5f2bfcbc378bb5a79e24e" rel="noopener noreferrer" target="_blank" title="Developing Applications on AWS">
+<img alt="Coursera Developing Applications on AWS badge" loading="lazy" src="Images/DevAwsCourseraSpecialization.png"/>
+<span>Developing Applications on AWS</span>
+</a>
+<a class="achievement-card" href="https://coursera.org/share/028856a97f2a74554aa6e8d29f488453" rel="noopener noreferrer" target="_blank" title="Deep Learning Specialization">
+<img alt="Deep Learning Specialization badge" loading="lazy" src="Images/achievement_DeepLearning.png"/>
+<span>Deep Learning Specialization</span>
+</a>
+<a class="achievement-card" href="https://coursera.org/share/7bee40c6e7618a9f9fefa2032bfc2273" rel="noopener noreferrer" target="_blank" title="Google UX Design Certificate">
+<img alt="Google UX Design Certificate badge" loading="lazy" src="Images/achievement_GoogleUx.png"/>
+<span>Google UX Design Certificate</span>
+</a>
+<a class="achievement-card" href="https://certificate.algoexpert.io/AE-d62dadabb6" rel="noopener noreferrer" target="_blank" title="AlgoExpert Certificate">
+<img alt="AlgoExpert Certificate badge" loading="lazy" src="Images/achievement_Algorithms.png"/>
+<span>AlgoExpert Certificate</span>
+</a>
+</div>
+</div>
+</section>
+<section class="section shell callout mtr-2">
+<div><p class="eyebrow">NEXT STEP</p><h2>Explore the full project collection.</h2><p>The full portfolio includes enterprise applications, systems-integration work, accessibility and UX projects, public-sector modernization, and independent technical projects.</p></div>
+<a class="button primary" href="Portfolio.html">Browse full portfolio</a>
+</section>
+</main>
+<footer class="site-footer">
+<div class="shell footer-grid">
+<div><strong>Ramiro Puentes</strong><p>Software engineering, systems integration, and accessible digital experiences.</p></div>
+<div class="footer-links">
+<a href="Portfolio.html">Portfolio</a><a href="About.html">About</a><a href="Contact.html">Contact</a>
+<a href="https://www.linkedin.com/in/ramiro-puentes-fullstack-developer/" rel="noopener noreferrer" target="_blank">LinkedIn ↗</a>
+</div>
+</div>
+</footer>
+</body></html>

@@ -1,0 +1,389 @@
+/* Material 3 case-study treatment for project detail pages.
+   Loaded only by ProjectDetails_*.html so legacy content can stay intact
+   while sharing the visual system used by the redesigned portfolio. */
+
+.project-page {
+  background:
+    radial-gradient(circle at 94% 2%, rgba(211,227,253,.82), transparent 24rem),
+    radial-gradient(circle at 2% 31%, rgba(196,238,223,.42), transparent 22rem),
+    #f8fafd;
+  color:#1f1f1f;
+}
+.project-page main{overflow:hidden}
+
+/* Project hero */
+.project-page .project-page-hero{
+  padding-top:72px;
+  padding-bottom:34px;
+}
+.project-page .project-back{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  margin-bottom:30px;
+  padding:9px 14px;
+  border-radius:999px;
+  color:#0b57d0;
+  background:#fff;
+  border:1px solid #c7cbd1;
+  font-weight:700;
+  text-decoration:none;
+  transition:background .18s ease,border-color .18s ease,transform .18s ease;
+}
+.project-page .project-back:hover{
+  background:#edf3fc;
+  border-color:#0b57d0;
+  transform:translateY(-1px);
+}
+.project-page .project-page-hero h1{
+  max-width:900px;
+  margin:8px 0 0;
+  color:#202124;
+  font-family:Roboto,Arial,Helvetica,sans-serif;
+  font-size:clamp(2.45rem,6vw,4.9rem);
+  font-weight:500;
+  letter-spacing:-.05em;
+  line-height:1.02;
+}
+.project-page .project-page-hero .eyebrow{margin:0}
+
+/* Showcase / legacy Bootstrap carousel */
+.project-page .project-showcase{
+  margin-bottom:46px;
+}
+.project-page .project-showcase.container,
+.project-page .project-showcase.container-fluid{
+  width:min(calc(100% - 48px),1180px);
+  max-width:1180px;
+  padding:0;
+}
+.project-page .carousel{
+  overflow:hidden;
+  border:1px solid #d8dde5;
+  border-radius:28px;
+  background:#fff;
+  box-shadow:0 2px 4px rgba(60,64,67,.14),0 8px 24px rgba(60,64,67,.10);
+}
+.project-page .carousel-inner{
+  background:#e9eef6;
+}
+.project-page .carousel-item img{
+  width:100%;
+  max-height:760px;
+  object-fit:contain;
+  background:#e9eef6;
+}
+.project-page .carousel-indicators{
+  margin-bottom:14px;
+}
+.project-page .carousel-indicators [data-bs-target]{
+  width:8px;
+  height:8px;
+  border:0;
+  border-radius:999px;
+  background-color:#5f6368;
+}
+.project-page .carousel-control-prev,
+.project-page .carousel-control-next{width:11%}
+.project-page .carousel-control-prev-icon,
+.project-page .carousel-control-next-icon{
+  width:42px;
+  height:42px;
+  padding:9px;
+  border-radius:999px;
+  background-color:rgba(31,31,31,.72);
+  background-size:46%;
+}
+
+/* Case-study content surface */
+.project-page .project-details-wrapper,
+.project-page .project-detail-wrapper{
+  width:min(calc(100% - 48px),1040px)!important;
+  max-width:1040px!important;
+  margin:0 auto!important;
+  padding:0!important;
+}
+.project-page .project-details-wrapper > section.section-spacing,
+.project-page .project-detail-wrapper > section.section-spacing{
+  display:block;
+  width:100%;
+}
+.project-page .project-details-wrapper .container,
+.project-page .project-detail-wrapper .container{
+  width:100%;
+  max-width:none;
+  padding-left:0;
+  padding-right:0;
+}
+.project-page .project-details-wrapper .row,
+.project-page .project-detail-wrapper .row{
+  --bs-gutter-x:1.75rem;
+  --bs-gutter-y:1.5rem;
+}
+
+/* Typography */
+.project-page .p-headline4,
+.project-page .head-title,
+.project-page .portfolio-card-section h2,
+.project-page .project-details-wrapper h2{
+  margin:0 0 24px!important;
+  color:#202124!important;
+  font-family:Roboto,Arial,Helvetica,sans-serif!important;
+  font-size:clamp(1.55rem,3vw,2rem)!important;
+  font-weight:600!important;
+  letter-spacing:-.025em!important;
+  line-height:1.2!important;
+  text-align:left;
+}
+.project-page .p-headline5,
+.project-page .portfolio-card-section h3,
+.project-page .project-details-wrapper h3,
+.project-page .insight h3,
+.project-page .lesson h3{
+  color:#202124!important;
+  font-size:1.08rem!important;
+  font-weight:700!important;
+  line-height:1.35!important;
+}
+.project-page .p-text,
+.project-page .lead,
+.project-page .section-information,
+.project-page .portfolio-card-section p,
+.project-page .project-details-wrapper p,
+.project-page .project-detail-wrapper p,
+.project-page .project-details-wrapper li,
+.project-page .project-detail-wrapper li{
+  color:#5f6368!important;
+  font-size:1rem!important;
+  line-height:1.75!important;
+}
+.project-page strong{color:#303134}
+.project-page a{color:#0b57d0}
+
+/* Supporting icons / illustrations */
+.project-page .project-detail-wrapper .col-md-2 > img,
+.project-page .project-detail-wrapper .col-md-3 > img{
+  display:block;
+  max-width:120px!important;
+  max-height:180px;
+  margin:0 auto;
+  object-fit:contain;
+  opacity:.78;
+}
+.project-page .user-research-image,
+.project-page .project-details-image,
+.project-page .section-research-images img,
+.project-page img.lofi-images,
+.project-page img.gif-fit{
+  border-radius:20px;
+}
+.project-page .project-details-image,
+.project-page .user-research-image{
+  max-width:100%;
+  height:auto;
+}
+.project-page .section-research-images{gap:0}
+.project-page .section-research-images .section-image-item img{
+  width:100%;
+  height:auto;
+  border:1px solid #d8dde5;
+  box-shadow:0 1px 3px rgba(60,64,67,.12);
+}
+
+/* Legacy 3-up / 4-up content becomes Material tonal tiles */
+.project-page .section-information.col-md-3,
+.project-page .section-information.col-md-4,
+.project-page .section-information.col-md-6{
+  border-radius:20px;
+  padding:22px!important;
+  background:#edf3fb;
+}
+.project-page .section-information.col-md-3:nth-of-type(even),
+.project-page .section-information.col-md-4:nth-of-type(even),
+.project-page .section-information.col-md-6:nth-of-type(even){
+  background:#e6f4ea;
+}
+.project-page .section-information.col-md-3 > img,
+.project-page .section-information.col-md-4 > img,
+.project-page .section-information.col-md-6 > img{
+  max-width:84px;
+  max-height:84px;
+  margin:0 auto 14px;
+  object-fit:contain;
+}
+
+/* Modern project details */
+.project-page .insight,
+.project-page .lesson{
+  margin:18px 0;
+  padding:22px 24px;
+  border-radius:20px;
+  background:#f0f4fa;
+}
+.project-page .insight:nth-of-type(even),
+.project-page .lesson:nth-of-type(even){background:#e8f0fe}
+.project-page .insight p:last-child,
+.project-page .lesson p:last-child{margin-bottom:0}
+.project-page .ul-checks{
+  display:grid;
+  gap:10px;
+  margin:18px 0 0;
+}
+.project-page .ul-checks li,
+.project-page .portfolio-card-section ul li{
+  position:relative;
+  margin:0 0 10px!important;
+  padding:12px 14px 12px 42px!important;
+  border:0!important;
+  border-radius:14px!important;
+  background:#edf3fb!important;
+  color:#444746!important;
+  font-size:1rem!important;
+  line-height:1.55!important;
+  display:block!important;
+}
+.project-page .ul-checks li::before,
+.project-page .portfolio-card-section ul li::before{
+  content:"✓"!important;
+  position:absolute;
+  left:15px;
+  top:12px;
+  margin:0!important;
+  color:#0b57d0!important;
+  font-size:1.05rem!important;
+  font-weight:800!important;
+}
+.project-page .li-add::before{content:"+"!important}
+.project-page .li-remove-style::before{content:none!important}
+
+/* Tables */
+.project-page .table-responsive{
+  overflow:hidden;
+  border:1px solid #d8dde5;
+  border-radius:18px;
+  background:#fff;
+}
+.project-page .table{
+  margin:0;
+  --bs-table-bg:transparent;
+  --bs-table-border-color:#e1e5eb;
+  color:#444746;
+}
+.project-page .table th{
+  width:34%;
+  padding:14px 16px;
+  color:#202124;
+  background:#edf3fb;
+  font-weight:700;
+}
+.project-page .table td{padding:14px 16px;color:#5f6368}
+
+/* Standalone media embedded in legacy sections */
+.project-page iframe,
+.project-page video{
+  max-width:100%;
+  border-radius:20px;
+}
+.project-page .mobile-image-group img{
+  border:1px solid #d8dde5;
+  border-radius:20px;
+  background:#fff;
+  box-shadow:0 1px 3px rgba(60,64,67,.12);
+}
+
+/* Bottom CTA */
+.project-page .project-cta{
+  margin-top:58px;
+  margin-bottom:78px;
+}
+.project-page .project-cta p{color:#405467}
+.project-page .project-cta .cta-row{margin-top:0;justify-content:flex-end}
+
+/* Hide remnants of the old project-page CTA if a page contains one unexpectedly. */
+.project-page .home-contact{display:none!important}
+
+@media(max-width:767px){
+  .project-page .project-page-hero{padding-top:52px;padding-bottom:26px}
+  .project-page .project-page-hero h1{font-size:clamp(2.25rem,12vw,3.45rem)}
+  .project-page .project-showcase.container,
+  .project-page .project-showcase.container-fluid,
+  .project-page .project-details-wrapper,
+  .project-page .project-detail-wrapper{
+    width:min(calc(100% - 30px),1040px)!important;
+  }
+  .project-page .project-details-wrapper > section.section-spacing,
+  .project-page .project-detail-wrapper > section.section-spacing{
+    padding:28px 22px!important;
+    border-radius:24px!important;
+  }
+  .project-page .carousel{border-radius:22px}
+  .project-page .carousel-control-prev-icon,
+  .project-page .carousel-control-next-icon{width:34px;height:34px}
+  .project-page .section-information.col-md-3,
+  .project-page .section-information.col-md-4,
+  .project-page .section-information.col-md-6{
+    margin-bottom:10px;
+  }
+  .project-page .mobile-image-group img{width:100%!important}
+  .project-page .table th{width:40%}
+  .project-page .project-cta .cta-row{justify-content:flex-start}
+}
+
+/* --------------------------------------------------------------------------
+   Shared "checklist" and mobile-image-group patterns
+   Previously duplicated as inline <style> blocks inside four separate
+   ProjectDetails_*.html files (Student MFA, Orientation, Orientation
+   Dashboard, Title IX) — same ~40 lines of CSS copy-pasted four times.
+   Consolidated here so every case study shares one definition and future
+   edits only happen in one place.
+   -------------------------------------------------------------------------- */
+.ul-checks{list-style:none!important;padding:0}
+.ul-checks li{padding:12px;margin-bottom:10px;background:#e9f5ff;border-left:5px solid #007bff;border-radius:6px;font-size:18px;display:flex;align-items:center}
+.ul-checks li::before{content:"✔";color:#007bff;font-weight:bold;margin-right:10px;font-size:20px}
+.mobile-image-group{display:flex;flex-direction:row;justify-content:center;gap:15px;flex-wrap:wrap}
+.mobile-image-group img{width:40%}
+@media(max-width:720px){
+  .mobile-image-group img{width:100%;max-width:280px}
+}
+
+/* --------------------------------------------------------------------------
+   "Related Project" cross-link button (Orientation / Orientation Dashboard)
+   This was a bare Bootstrap .btn.btn-primary, styled by nothing in this
+   project — so it fell back to Bootstrap's own default look. Practically
+   that renders in an outdated/inconsistent way here — thin type, square
+   corners, weak contrast against the surrounding Material page — because it
+   never picks up any of this site's actual button styling (.button.primary
+   in portfolio-v2.css targets a different class name). Restyling it to
+   match .button.primary directly, with explicit colors rather than
+   Bootstrap CSS-variable fallbacks, fixes the contrast and makes it look
+   like the same site as everything around it.
+   -------------------------------------------------------------------------- */
+.project-page .btn.btn-primary{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:8px;
+  min-height:44px;
+  padding:10px 20px;
+  border:1px solid transparent;
+  border-radius:999px;
+  background:#0b57d0;
+  color:#ffffff!important;
+  font-weight:700;
+  font-size:.95rem;
+  letter-spacing:.01em;
+  text-decoration:none;
+  box-shadow:none;
+  transition:background .18s ease,box-shadow .18s ease,transform .18s ease;
+}
+.project-page .btn.btn-primary:hover,
+.project-page .btn.btn-primary:focus-visible{
+  background:#0842a0;
+  color:#ffffff!important;
+  box-shadow:0 1px 2px rgba(60,64,67,.10),0 2px 6px rgba(60,64,67,.06);
+  transform:translateY(-1px);
+}
+.project-page .btn.btn-primary:focus-visible{
+  outline:2px solid #0b57d0;
+  outline-offset:2px;
+}

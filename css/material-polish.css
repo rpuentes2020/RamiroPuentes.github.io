@@ -1,0 +1,276 @@
+/* ==========================================================================
+   Material 3 polish pass — project case studies only
+   Loaded only by ProjectDetails_*.html. The site-wide palette, spacing
+   rhythm, and component styling this file used to duplicate (and then
+   override a second time) now live once, in css/portfolio-v2.css, which
+   every page — including case studies — also loads. This file is scoped to
+   the `.project-page` body class so it only ever affects case-study pages.
+   ========================================================================== */
+:root{
+  /* Aliases onto the canonical tokens in portfolio-v2.css, so this file has
+     no color values of its own to drift out of sync with the rest of the
+     site. Only truly page-specific tones (the risk/solution/success tile
+     colors used in case-study callouts) are new values. */
+  --md-bg:var(--bg);
+  --md-surface:var(--surface);
+  --md-surface-low:#f4f7fb;
+  --md-text:var(--text);
+  --md-text-muted:var(--muted);
+  --md-outline:var(--line);
+  --md-primary-container:var(--accent-soft);
+  --md-shadow-1:var(--shadow);
+  --md-shadow-2:var(--shadow-raised);
+  --md-risk-container:#fff2f0;
+  --md-risk-outline:#f1d1cc;
+  --md-solution-container:#eef4ff;
+  --md-solution-outline:#d4e2f7;
+  --md-success-container:#edf8f1;
+  --md-success-outline:#cfe8d7;
+}
+
+/* --------------------------------------------------------------------------
+   Project case studies
+   -------------------------------------------------------------------------- */
+.project-page{
+  background:
+    radial-gradient(circle at 94% 2%,rgba(220,232,250,.66),transparent 26rem),
+    radial-gradient(circle at 1% 30%,rgba(220,239,233,.30),transparent 24rem),
+    var(--md-bg);
+}
+.project-page .project-page-hero{padding-top:76px;padding-bottom:42px}
+.project-page .project-page-hero h1{max-width:960px}
+.project-page .project-showcase{margin-bottom:54px}
+.project-page .carousel{
+  border-color:var(--md-outline);
+  border-radius:30px;
+  box-shadow:var(--md-shadow-2);
+}
+
+.project-page .project-details-wrapper,
+.project-page .project-detail-wrapper{
+  width:min(calc(100% - 48px),1080px)!important;
+  max-width:1080px!important;
+}
+.project-page .project-details-wrapper > section.section-spacing,
+.project-page .project-detail-wrapper > section.section-spacing{
+  margin:0 0 36px!important;
+  padding:64px 48px!important;
+  border:1px solid var(--md-outline)!important;
+  border-radius:30px!important;
+  background:var(--md-surface)!important;
+  box-shadow:var(--md-shadow-1)!important;
+}
+.project-page .project-details-wrapper > section.section-spacing:nth-of-type(even),
+.project-page .project-detail-wrapper > section.section-spacing:nth-of-type(even){
+  background:var(--md-surface)!important;
+}
+.project-page .project-details-wrapper .row,
+.project-page .project-detail-wrapper .row{
+  --bs-gutter-x:2.25rem;
+  --bs-gutter-y:2rem;
+}
+
+/* Headings get their own space rather than being visually attached to content. */
+.project-page .p-headline4,
+.project-page .head-title,
+.project-page .portfolio-card-section h2,
+.project-page .project-details-wrapper h2{
+  margin:0 0 30px!important;
+  font-size:clamp(1.55rem,2.5vw,1.95rem)!important;
+  line-height:1.22!important;
+  color:var(--md-text)!important;
+}
+.project-page .material-section-heading{
+  grid-column:1/-1;
+  width:auto!important;
+  max-width:none!important;
+  padding:0!important;
+  margin:0!important;
+  /* Bootstrap's .row is a flex container, and its columns default to
+     flex-shrink:0 with a plain width. Overriding just the width (above)
+     left flex-shrink:0 in place, so with no explicit basis the browser sized
+     this column to its unwrapped max-content width — a table or a paragraph
+     rendered as one long line far wider than the viewport, silently clipped
+     by `.project-page main{overflow:hidden}` above. Restoring a normal
+     flex-shrink/basis (and min-width:0, needed for a flex item to shrink
+     below its content's intrinsic width at all) lets the column — and the
+     text and tables inside it — wrap and shrink to fit like a normal block. */
+  flex:1 1 auto;
+  min-width:0;
+}
+.project-page .material-section-heading .p-headline4,
+.project-page .material-section-heading h2{margin-bottom:6px!important}
+
+/* Readability: long prose should not span an entire wide card. */
+.project-page .p-text,
+.project-page .lead,
+.project-page .portfolio-card-section p,
+.project-page .project-details-wrapper p,
+.project-page .project-detail-wrapper p,
+.project-page .project-details-wrapper li,
+.project-page .project-detail-wrapper li{
+  color:var(--md-text-muted)!important;
+  font-size:1.025rem!important;
+  line-height:1.75!important;
+}
+.project-page .section-information:not(.material-tile-card) > p,
+.project-page .portfolio-card-section .col-md-9 > p,
+.project-page .portfolio-card-section .col-md-10 > p,
+.project-page .portfolio-card-section .col-md-12 > p{
+  max-width:76ch;
+}
+.project-page .section-information:not(.material-tile-card) > p + p{margin-top:18px}
+
+/* Convert old Bootstrap 2/3/4-up content blocks into true gapped Material grids. */
+.project-page .material-tile-grid{
+  display:grid!important;
+  gap:24px!important;
+  margin:0!important;
+  align-items:stretch;
+}
+.project-page .material-tile-grid.material-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}
+.project-page .material-tile-grid.material-cols-3{grid-template-columns:repeat(3,minmax(0,1fr))}
+.project-page .material-tile-grid.material-cols-4{grid-template-columns:repeat(4,minmax(0,1fr))}
+.project-page .material-tile-grid > *{margin:0!important}
+.project-page .section-information.material-tile-card{
+  width:auto!important;
+  max-width:none!important;
+  flex:none!important;
+  min-width:0;
+  padding:30px 28px!important;
+  border:1px solid var(--md-outline)!important;
+  border-radius:22px!important;
+  background:var(--md-surface-low)!important;
+  box-shadow:none!important;
+  text-align:left!important;
+  display:flex;
+  flex-direction:column;
+  align-items:flex-start;
+}
+.project-page .section-information.material-tile-card > img{
+  width:auto!important;
+  height:54px!important;
+  max-width:64px!important;
+  max-height:64px!important;
+  margin:0 0 20px!important;
+  object-fit:contain;
+}
+.project-page .section-information.material-tile-card .p-headline5,
+.project-page .section-information.material-tile-card h3{
+  margin:0 0 12px!important;
+  color:var(--md-text)!important;
+  font-size:1.08rem!important;
+  line-height:1.35!important;
+}
+.project-page .section-information.material-tile-card p{
+  margin:0!important;
+  max-width:none!important;
+  font-size:1rem!important;
+  line-height:1.7!important;
+  text-align:left!important;
+}
+
+/* Semantic tonal roles keep color meaningful instead of alternating arbitrarily. */
+.project-page .material-tone-problem .material-tile-card{
+  background:var(--md-risk-container)!important;
+  border-color:var(--md-risk-outline)!important;
+}
+.project-page .material-tone-solution .material-tile-card{
+  background:var(--md-solution-container)!important;
+  border-color:var(--md-solution-outline)!important;
+}
+.project-page .material-tone-success .material-tile-card{
+  background:var(--md-success-container)!important;
+  border-color:var(--md-success-outline)!important;
+}
+.project-page .material-tone-neutral .material-tile-card{
+  background:var(--md-surface-low)!important;
+}
+
+/* Full-width illustrations and gallery content receive consistent separation. */
+.project-page .user-research-image,
+.project-page .project-details-image{
+  display:block;
+  margin:6px auto 34px!important;
+  max-width:min(100%,680px)!important;
+}
+.project-page .section-research-images{gap:24px!important}
+.project-page .section-research-images .section-image-item{margin:0!important}
+.project-page .section-research-images .section-image-item img,
+.project-page .portfolio-card-section .img-fluid{
+  border-radius:22px;
+}
+.project-page .portfolio-card-section hr{
+  margin:32px 0;
+  border-color:var(--md-outline);
+  opacity:1;
+}
+.project-page .mobile-image-group{gap:22px!important;margin-top:20px}
+.project-page .mobile-image-group img{margin:0!important}
+
+/* Modern case-study lists and insight cards. */
+.project-page .ul-checks{gap:14px;margin-top:24px}
+.project-page .ul-checks li,
+.project-page .portfolio-card-section ul li{
+  margin:0 0 12px!important;
+  padding:16px 18px 16px 48px!important;
+  border:1px solid #d7e3f6!important;
+  background:#f4f7fd!important;
+  border-radius:16px!important;
+  line-height:1.65!important;
+}
+.project-page .ul-checks li::before,
+.project-page .portfolio-card-section ul li::before{left:18px;top:16px}
+.project-page .ul-checks li strong{margin-right:5px}
+.project-page .insight,
+.project-page .lesson{
+  margin:22px 0!important;
+  padding:26px 28px!important;
+  border:1px solid var(--md-outline)!important;
+  border-radius:20px!important;
+  background:var(--md-surface-low)!important;
+}
+.project-page .insight:nth-of-type(even),
+.project-page .lesson:nth-of-type(even){background:var(--md-surface-low)!important}
+.project-page .insight h3,
+.project-page .lesson h3{margin:0 0 10px!important}
+
+/* Tables */
+.project-page .table-responsive{margin-top:30px!important;border-color:var(--md-outline);border-radius:20px}
+.project-page .table th{background:#eef4ff;padding:16px 18px}
+.project-page .table td{padding:16px 18px;line-height:1.6}
+
+/* End-of-case-study CTA */
+.project-page .project-cta{
+  margin-top:68px;
+  margin-bottom:84px;
+  padding:42px 46px!important;
+  background:var(--md-primary-container)!important;
+  border:1px solid #c9daf4!important;
+}
+
+@media(max-width:980px){
+  .project-page .material-tile-grid.material-cols-4,
+  .project-page .material-tile-grid.material-cols-3{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .project-page .project-details-wrapper > section.section-spacing,
+  .project-page .project-detail-wrapper > section.section-spacing{padding:52px 40px!important}
+}
+
+@media(max-width:720px){
+  .project-page .project-page-hero{padding-top:54px;padding-bottom:30px}
+  .project-page .project-showcase{margin-bottom:38px}
+  .project-page .project-details-wrapper,
+  .project-page .project-detail-wrapper{width:min(calc(100% - 28px),1080px)!important}
+  .project-page .project-details-wrapper > section.section-spacing,
+  .project-page .project-detail-wrapper > section.section-spacing{
+    margin-bottom:24px!important;
+    padding:38px 26px!important;
+    border-radius:24px!important;
+  }
+  .project-page .material-tile-grid.material-cols-2,
+  .project-page .material-tile-grid.material-cols-3,
+  .project-page .material-tile-grid.material-cols-4{grid-template-columns:1fr}
+  .project-page .material-tile-grid{gap:16px!important}
+  .project-page .section-information.material-tile-card{padding:24px!important;border-radius:18px!important}
+  .project-page .project-cta{padding:30px!important;margin-top:48px;margin-bottom:60px}
+}
