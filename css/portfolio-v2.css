@@ -97,7 +97,7 @@ button,input,textarea{font:inherit}
 .nav-toggle-icon::before{top:-5px}
 .nav-toggle-icon::after{top:5px}
 
-/* Buttons / links ----------------------------------------------------------*/
+/* Buttons / links ---------------------------------mtr-2-------------------------*/
 .button{
   display:inline-flex;align-items:center;justify-content:center;gap:8px;
   text-decoration:none;border-radius:999px;padding:10px 20px;min-height:44px;
@@ -255,6 +255,10 @@ button,input,textarea{font:inherit}
 .contact-card{position:sticky;top:100px}
 .contact-card h2{font-size:2rem}
 .contact-card .button{margin-top:10px}
+
+.mtr-5{
+  margin-top:5rem !important;
+}
 
 /* Responsive ---------------------------------------------------------------
    Two structural breakpoints (tablet / phone), plus small refinements for
